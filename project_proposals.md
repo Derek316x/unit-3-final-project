@@ -18,14 +18,27 @@ Please create a repository for your final project, with the following contents:
 
 ---
 **Project Name:**
+Pencraft
 
 **Team Name:**
+Phist
 
 **Team Members:**  
+Xiulan
+Christain
+Chris
+Derek
 
 
 ## The Problem 
-Describe the problem that your app will address. This does not need to be a novel idea or product, but your app should not directly recreate an existing product. If you are basing the app on an existing product, there should be some edge to your design or feature that solves a problem with that existing product.   
+
+"An estimated 25–33% of students are struggling to achieve competency in handwriting."
+- Conti, G. “Handwriting Characteristics and the Prediction of Illegibility in Third and Fifth Grade Students.” Presented at Handwriting in the 21st Century?: An Educational Summit, Washington, D.C., January 23, 2012.
+
+"Illegible handwriting is a problem for a large number of children…it can affect [children] not only personally (their
+self-esteem), but also academically, and their careers in the future. So, it’s got a very long trajectory."
+- Dr. Gerry Conti, assistant professor of occupational therapy at Wayne State University
+
 
 In this section, please frame the issue with supporting statistics about the need (market size, competitors, use cases). You should fully think through your user - who is your user? Why do they need this app? How are they using it?   
 
