@@ -48,8 +48,8 @@ In this section, please frame the issue with supporting statistics about the nee
 ## The Solution 
 Using a telsa
 Please provide a detailed description of the app here. Map out how the app solves the problem described in section I. You should also include:
-  *  Baseline features you plan to implement by Demo 1 (what + why).
-  *  Bonus features you plan to implement if baseline features are completed in time (what + why).
+  *  An app that will recognize your hand writing utilizing the iphone magnometer.  So that children and adults can perfect penmanship as well as asist in learning motor skills and new languages.
+  *  Some sort of way to test accuracy.
 
 ## Execution
 Please describe how you will build this app. Include: 
