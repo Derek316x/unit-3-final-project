@@ -39,10 +39,14 @@ Phist
 self-esteem), but also academically, and their careers in the future. So, it’s got a very long trajectory."**
 - Dr. Gerry Conti, assistant professor of occupational therapy at Wayne State University
 
+**"Solving the global problem of illetericy"**
+- http://www.dev4x.com/#moonshot-education-project
+
 
 In this section, please frame the issue with supporting statistics about the need (market size, competitors, use cases). You should fully think through your user - who is your user? Why do they need this app? How are they using it?   
 
 ## The Solution 
+Using a telsa
 Please provide a detailed description of the app here. Map out how the app solves the problem described in section I. You should also include:
   *  Baseline features you plan to implement by Demo 1 (what + why).
   *  Bonus features you plan to implement if baseline features are completed in time (what + why).
