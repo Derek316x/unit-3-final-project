@@ -24,10 +24,10 @@ Pencraft
 Phist
 
 **Team Members:**  
-Xiulan
-Christain
-Chris
-Derek
+-Xiulan
+-Christain
+-Chris
+-Derek
 
 
 ## The Problem 
