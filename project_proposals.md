@@ -32,11 +32,11 @@ Phist
 
 ## The Problem 
 
-"An estimated 25–33% of students are struggling to achieve competency in handwriting."
+**"An estimated 25–33% of students are struggling to achieve competency in handwriting."**
 - Conti, G. “Handwriting Characteristics and the Prediction of Illegibility in Third and Fifth Grade Students.” Presented at Handwriting in the 21st Century?: An Educational Summit, Washington, D.C., January 23, 2012.
 
-"Illegible handwriting is a problem for a large number of children…it can affect [children] not only personally (their
-self-esteem), but also academically, and their careers in the future. So, it’s got a very long trajectory."
+**"Illegible handwriting is a problem for a large number of children…it can affect [children] not only personally (their
+self-esteem), but also academically, and their careers in the future. So, it’s got a very long trajectory."**
 - Dr. Gerry Conti, assistant professor of occupational therapy at Wayne State University
 
 
