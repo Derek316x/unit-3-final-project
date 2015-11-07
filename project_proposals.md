@@ -36,9 +36,6 @@ Phist
 **"Illegible handwriting is a problem for a large number of children…it can affect [children] not only personally (their self-esteem), but also academically, and their careers in the future. So, it’s got a very long trajectory."**
 - Dr. Gerry Conti, assistant professor of occupational therapy at Wayne State University
 
-**[Doubt about the value of handwriting instruction] is similar to what happened with math as calculators and computers came into vogue…people wondered whether students needed to learn how to do math. The answer in both cases is absolutely “yes.” Writing is not obsolete.**
-– Daniel A. Domenech, executive director of the American Association of School Administrators
-
 ###Market Size###
 94 million iPhones are in use in US as of March 2015.
 - Source: Consumer Intelligence Research Partners
@@ -48,7 +45,10 @@ Phist
 In this section, please frame the issue with supporting statistics about the need (market size, competitors, use cases). You should fully think through your user - who is your user? Why do they need this app? How are they using it?   
 
 ## The Solution 
-Using a telsa
+
+**[Doubt about the value of handwriting instruction] is similar to what happened with math as calculators and computers came into vogue…people wondered whether students needed to learn how to do math. The answer in both cases is absolutely “yes.” Writing is not obsolete.**
+- Daniel A. Domenech, executive director of the American Association of School Administrators
+
 Please provide a detailed description of the app here. Map out how the app solves the problem described in section I. You should also include:
   *  An app that will recognize your hand writing utilizing the iphone magnometer.  So that children and adults can perfect penmanship as well as asist in learning motor skills and new languages.
   *  Some sort of way to test accuracy.
