@@ -33,9 +33,11 @@ Phist
 **"An estimated 25–33% of students are struggling to achieve competency in handwriting."**
 - Conti, G. “Handwriting Characteristics and the Prediction of Illegibility in Third and Fifth Grade Students.” Presented at Handwriting in the 21st Century?: An Educational Summit, Washington, D.C., January 23, 2012.
 
-**"Illegible handwriting is a problem for a large number of children…it can affect [children] not only personally (their
-self-esteem), but also academically, and their careers in the future. So, it’s got a very long trajectory."**
+**"Illegible handwriting is a problem for a large number of children…it can affect [children] not only personally (their self-esteem), but also academically, and their careers in the future. So, it’s got a very long trajectory."**
 - Dr. Gerry Conti, assistant professor of occupational therapy at Wayne State University
+
+**[Doubt about the value of handwriting instruction] is similar to what happened with math as calculators and computers came into vogue…people wondered whether students needed to learn how to do math. The answer in both cases is absolutely “yes.” Writing is not obsolete.**
+– Daniel A. Domenech, executive director of the American Association of School Administrators
 
 ###Market Size###
 94 million iPhones are in use in US as of March 2015.
