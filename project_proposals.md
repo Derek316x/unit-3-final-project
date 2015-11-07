@@ -27,6 +27,7 @@ Phist
 - Chris
 - Derek
 
+
 ## The Problem 
 
 **"An estimated 25–33% of students are struggling to achieve competency in handwriting."**
@@ -36,10 +37,10 @@ Phist
 self-esteem), but also academically, and their careers in the future. So, it’s got a very long trajectory."**
 - Dr. Gerry Conti, assistant professor of occupational therapy at Wayne State University
 
-####Market Size
+###Market Size###
 94 million iPhones are in use in US as of March 2015.
-- Source: Consumer Intelligence Research Partners
-⋅⋅* http://files.ctctcdn.com/150f9af2201/7c216f22-f310-4b85-8a23-5a2efdd0f574.pdf
+-Source: Consumer Intelligence Research Partners
+- http://files.ctctcdn.com/150f9af2201/7c216f22-f310-4b85-8a23-5a2efdd0f574.pdf
 
 
 In this section, please frame the issue with supporting statistics about the need (market size, competitors, use cases). You should fully think through your user - who is your user? Why do they need this app? How are they using it?   
