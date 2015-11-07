@@ -36,7 +36,7 @@ Phist
 **"Illegible handwriting is a problem for a large number of children…it can affect [children] not only personally (their self-esteem), but also academically, and their careers in the future. So, it’s got a very long trajectory."**
 - Dr. Gerry Conti, assistant professor of occupational therapy at Wayne State University
 
-**Manuscript handwriting instruction is only required until Grade 1, but fluency and automaticity in handwriting have been shown to develop well beyond then**
+**"Manuscript handwriting instruction is only required until Grade 1, but fluency and automaticity in handwriting have been shown to develop well beyond then."**
 - Graham, S., and Santangelo, T. “A Meta-Analysis of the Effectiveness of Teaching Handwriting.” Presented at Handwriting in the 21st Century?: An Educational Summit, Washington, D.C., January 23, 2012.
 
 ###Market Size###
