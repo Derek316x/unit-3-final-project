@@ -2,13 +2,11 @@
 
 ### The following is due Tuesday, 11/03 at 10:00pm:  
 
-  
 Please create a repository for your final project, with the following contents:  
   *  README with your group members  
   *  project_proposal.md (template below. Feel free to use the markdown from this file and fill in your responses.) 
   *  Your app
   *  Folder that contains [Weekly Retros](weekly_retrospective.md). (Empty for now)  
-
 
 ---
 
@@ -39,8 +37,9 @@ Phist
 self-esteem), but also academically, and their careers in the future. So, it’s got a very long trajectory."**
 - Dr. Gerry Conti, assistant professor of occupational therapy at Wayne State University
 
-**"Solving the global problem of illetericy"**
-- http://www.dev4x.com/#moonshot-education-project
+###Market Size###
+94 million iPhones are in use in US as of March 2015.
+⋅⋅*(http://files.ctctcdn.com/150f9af2201/7c216f22-f310-4b85-8a23-5a2efdd0f574.pdf)
 
 
 In this section, please frame the issue with supporting statistics about the need (market size, competitors, use cases). You should fully think through your user - who is your user? Why do they need this app? How are they using it?   
@@ -55,6 +54,9 @@ Please provide a detailed description of the app here. Map out how the app solve
 Please describe how you will build this app. Include: 
   *  A detailed timeline for building the product, broken out by weekly sprints. Think about the user stories you would frame your weeks around. *Your polished MVP (baseline features) should be ready to demo by Demo 1 on Thursday 11/17/2015.*  
   *  A breakdown of team member responsibilities. Team members should take ownership over a specific feature or aspect of the app.  
+
+**"Solving the global problem of illiteracy"**
+- http://www.dev4x.com/#moonshot-education-project
 
 
 [Example of a project proposal (from Mozi)](https://github.com/jaellysbales/access-robot/blob/master/ProjectProposal.md)
