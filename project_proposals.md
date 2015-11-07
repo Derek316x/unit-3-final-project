@@ -39,7 +39,7 @@ self-esteem), but also academically, and their careers in the future. So, it’s
 
 ###Market Size###
 94 million iPhones are in use in US as of March 2015.
--Source: Consumer Intelligence Research Partners
+- Source: Consumer Intelligence Research Partners
 - http://files.ctctcdn.com/150f9af2201/7c216f22-f310-4b85-8a23-5a2efdd0f574.pdf
 
 
