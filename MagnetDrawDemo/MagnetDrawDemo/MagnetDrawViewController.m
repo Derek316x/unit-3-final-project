@@ -11,6 +11,9 @@
 @interface MagnetDrawViewController ()
 
 @property (nonatomic) CLLocationManager *locationManager;
+@property (weak, nonatomic) IBOutlet UILabel *xLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zLabel;
 
 @end
 
@@ -33,9 +36,7 @@ struct MagneticCalibrationData{
         UIAlertController *noCompassAlert = [UIAlertController alertControllerWithTitle:@"No Compass" message:@"This device is not able to detect magnetic fields" preferredStyle:UIAlertControllerStyleAlert];
         [self presentViewController:noCompassAlert animated:YES completion:^{}];
         
-    
     } else {
-
         //check if location services are authorized
         //alert user that location services are disabled
         if (([CLLocationManager authorizationStatus] == kCLAuthorizationStatusRestricted) ||
@@ -69,6 +70,10 @@ struct MagneticCalibrationData{
     NSString *Xstring = [NSString stringWithFormat:@"%.1f", heading.x];
     NSString *Ystring = [NSString stringWithFormat:@"%.1f", heading.y];
     NSString *Zstring = [NSString stringWithFormat:@"%.1f", heading.z];
+    
+    self.xLabel.text = Xstring;
+    self.yLabel.text = Ystring;
+    self.zLabel.text = Zstring;
     
     // Compute and display the magnitude (size or strength) of the vector.
     //      magnitude = sqrt(x^2 + y^2 + z^2)
