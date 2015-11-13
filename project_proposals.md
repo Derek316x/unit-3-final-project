@@ -33,7 +33,7 @@ Phist
 - Source: Tech and Play
 
 ###User###
-Elementary school students (Pre-K to 4th Grade) who have access to an iPad
+Elementary school students (Pre-K to 4th Grade) who have access to an iPad   
 Buyer: Parents of school students
 
 ###Competitors###
