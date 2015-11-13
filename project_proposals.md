@@ -37,10 +37,10 @@ Phist
 - Buyer: Parents of school students
 
 ###Competitors###
-Osmo
-My First Little Writer
-Use Your Handwriting
-iTrace Free 
+Osmo  
+My First Little Writer  
+Use Your Handwriting  
+iTrace Free   
 
 In this section, please frame the issue with supporting statistics about the need (market size, competitors, use cases). You should fully think through your user - who is your user? Why do they need this app? How are they using it?   
 
