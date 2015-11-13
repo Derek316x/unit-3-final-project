@@ -50,10 +50,10 @@ Parent downloads app for child. The child writes/draws with magnetic pen for ent
 
 ## The Solution 
 Pencraft is the most fun and enriching way for kids to enhance their handwriting skills.  
-1. User writes on physical paper using the magnetic pen. 
-2. Pen strokes are displayed on the iPhone's screen in real-time.
-3. User taps submit button when done writing.
-4. Computer vision alorithms score handwriting accuracy.
+1. User writes on physical paper using the magnetic pen.   
+2. Pen strokes are displayed on the iPhone's screen in real-time.  
+3. User taps submit button when done writing.  
+4. Computer vision alorithms score handwriting accuracy.  
 
 ## Execution
 Please describe how you will build this app. Include: 
