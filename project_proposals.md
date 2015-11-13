@@ -1,19 +1,5 @@
-# Final Project Proposal Submission  
-
-### The following is due Tuesday, 11/03 at 10:00pm:  
-
-Please create a repository for your final project, with the following contents:  
-  *  README with your group members  
-  *  project_proposal.md (template below. Feel free to use the markdown from this file and fill in your responses.) 
-  *  Your app
-  *  Folder that contains [Weekly Retros](weekly_retrospective.md). (Empty for now)  
-
----
 
 # Access Code 2.2 Final Project Proposal
-
-#### For each group, please submit the final project proposal by 10:00 pm on Tuesday 11/03/2015. You will receive feedback on the proposal on Thursday 11/5. 
-
 ---
 **Project Name:**
 Pencraft
@@ -27,7 +13,6 @@ Phist
 - Chris
 - Derek
 
-
 ## The Problem 
 
 **"An estimated 25–33% of students are struggling to achieve competency in handwriting."**
@@ -40,10 +25,22 @@ Phist
 - Graham, S., and Santangelo, T. “A Meta-Analysis of the Effectiveness of Teaching Handwriting.” Presented at Handwriting in the 21st Century?: An Educational Summit, Washington, D.C., January 23, 2012.
 
 ###Market Size###
-94 million iPhones are in use in US as of March 2015.
-- Source: Consumer Intelligence Research Partners
-- http://files.ctctcdn.com/150f9af2201/7c216f22-f310-4b85-8a23-5a2efdd0f574.pdf
+**56% of children between the ages of 0 to 5 have access to an iPad in the home.**
+- Source: Tech and Play
+- http://www.techandplay.org/reports/TAP_Final_Report.pdf
 
+**60% of parents report downloading apps to support their children's learning.**
+- Source: Tech and Play
+
+###User###
+- Elementary school students (Pre-K to 4th Grade) who have access to an iPad
+- Buyer: Parents of school students
+
+###Competitors###
+Osmo
+My First Little Writer
+Use Your Handwriting
+iTrace Free 
 
 In this section, please frame the issue with supporting statistics about the need (market size, competitors, use cases). You should fully think through your user - who is your user? Why do they need this app? How are they using it?   
 
