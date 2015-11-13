@@ -33,16 +33,17 @@ Phist
 - Source: Tech and Play
 
 ###User###
-- Elementary school students (Pre-K to 4th Grade) who have access to an iPad
-- Buyer: Parents of school students
+Elementary school students (Pre-K to 4th Grade) who have access to an iPad
+Buyer: Parents of school students
 
 ###Competitors###
 Osmo  
 My First Little Writer  
 Use Your Handwriting  
-iTrace Free   
+iTrace Free  
 
-In this section, please frame the issue with supporting statistics about the need (market size, competitors, use cases). You should fully think through your user - who is your user? Why do they need this app? How are they using it?   
+###Use Case###
+Parent downloads app for child. The child writes/draws with magnetic pen for entertainment / extracurricular enrichment.
 
 ## The Solution 
 
@@ -57,9 +58,6 @@ Please provide a detailed description of the app here. Map out how the app solve
 Please describe how you will build this app. Include: 
   *  A detailed timeline for building the product, broken out by weekly sprints. Think about the user stories you would frame your weeks around. *Your polished MVP (baseline features) should be ready to demo by Demo 1 on Thursday 11/17/2015.*  
   *  A breakdown of team member responsibilities. Team members should take ownership over a specific feature or aspect of the app.  
-
-**"Solving the global problem of illiteracy"**
-- http://www.dev4x.com/#moonshot-education-project
 
 
 [Example of a project proposal (from Mozi)](https://github.com/jaellysbales/access-robot/blob/master/ProjectProposal.md)
