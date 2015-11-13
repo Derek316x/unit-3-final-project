@@ -13,6 +13,8 @@
 		6970D0C21BEFFCAA003F462C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6970D0C01BEFFCAA003F462C /* Main.storyboard */; };
 		6970D0C41BEFFCAA003F462C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6970D0C31BEFFCAA003F462C /* Assets.xcassets */; };
 		6970D0C71BEFFCAA003F462C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6970D0C51BEFFCAA003F462C /* LaunchScreen.storyboard */; };
+		69E4B5861BF4660E00F92C27 /* MagneticCalibrationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E4B5851BF4660E00F92C27 /* MagneticCalibrationData.m */; };
+		69E4B5891BF466A200F92C27 /* MagnetVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E4B5881BF466A200F92C27 /* MagnetVector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		6970D0C31BEFFCAA003F462C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6970D0C61BEFFCAA003F462C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6970D0C81BEFFCAA003F462C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E4B5841BF4660E00F92C27 /* MagneticCalibrationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagneticCalibrationData.h; sourceTree = "<group>"; };
+		69E4B5851BF4660E00F92C27 /* MagneticCalibrationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagneticCalibrationData.m; sourceTree = "<group>"; };
+		69E4B5871BF466A200F92C27 /* MagnetVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnetVector.h; sourceTree = "<group>"; };
+		69E4B5881BF466A200F92C27 /* MagnetVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnetVector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,10 @@
 			children = (
 				6970D0BA1BEFFCAA003F462C /* AppDelegate.h */,
 				6970D0BB1BEFFCAA003F462C /* AppDelegate.m */,
+				69E4B5871BF466A200F92C27 /* MagnetVector.h */,
+				69E4B5881BF466A200F92C27 /* MagnetVector.m */,
+				69E4B5841BF4660E00F92C27 /* MagneticCalibrationData.h */,
+				69E4B5851BF4660E00F92C27 /* MagneticCalibrationData.m */,
 				691E03D91BF2A5BE00AB6B82 /* MagnetDrawViewController.h */,
 				691E03DA1BF2A5BE00AB6B82 /* MagnetDrawViewController.m */,
 				6970D0C01BEFFCAA003F462C /* Main.storyboard */,
@@ -152,6 +162,8 @@
 			files = (
 				6970D0BC1BEFFCAA003F462C /* AppDelegate.m in Sources */,
 				691E03DB1BF2A5BE00AB6B82 /* MagnetDrawViewController.m in Sources */,
+				69E4B5861BF4660E00F92C27 /* MagneticCalibrationData.m in Sources */,
+				69E4B5891BF466A200F92C27 /* MagnetVector.m in Sources */,
 				6970D0B91BEFFCAA003F462C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
