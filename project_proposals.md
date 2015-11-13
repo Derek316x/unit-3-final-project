@@ -24,6 +24,9 @@ Phist
 **"Manuscript handwriting instruction is only required until Grade 1, but fluency and automaticity in handwriting have been shown to develop well beyond then."**
 - Graham, S., and Santangelo, T. “A Meta-Analysis of the Effectiveness of Teaching Handwriting.” Presented at Handwriting in the 21st Century?: An Educational Summit, Washington, D.C., January 23, 2012.
 
+**[Doubt about the value of handwriting instruction] is similar to what happened with math as calculators and computers came into vogue…people wondered whether students needed to learn how to do math. The answer in both cases is absolutely “yes.” Writing is not obsolete.**
+- Daniel A. Domenech, executive director of the American Association of School Administrators
+
 ###Market Size###
 **56% of children between the ages of 0 to 5 have access to an iPad in the home.**
 - Source: Tech and Play
@@ -46,13 +49,11 @@ iTrace Free
 Parent downloads app for child. The child writes/draws with magnetic pen for entertainment / extracurricular enrichment.
 
 ## The Solution 
-
-**[Doubt about the value of handwriting instruction] is similar to what happened with math as calculators and computers came into vogue…people wondered whether students needed to learn how to do math. The answer in both cases is absolutely “yes.” Writing is not obsolete.**
-- Daniel A. Domenech, executive director of the American Association of School Administrators
-
-Please provide a detailed description of the app here. Map out how the app solves the problem described in section I. You should also include:
-  *  An app that will recognize your hand writing utilizing the iphone magnometer.  So that children and adults can perfect penmanship as well as asist in learning motor skills and new languages.
-  *  Some sort of way to test accuracy.
+Pencraft is the most fun and enriching way for kids to enhance their handwriting skills.  
+1. User writes on physical paper using the magnetic pen. 
+2. Pen strokes are displayed on the iPhone's screen in real-time.
+3. User taps submit button when done writing.
+4. Computer vision alorithms score handwriting accuracy.
 
 ## Execution
 Please describe how you will build this app. Include: 
