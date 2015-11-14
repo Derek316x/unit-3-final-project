@@ -14,5 +14,7 @@
 @property (nonatomic) CGFloat magnitude;
 @property (nonatomic) CGFloat direction;
 
+-(CGPoint)XYpointFromMagnitudeAndDirection;
+
 
 @end

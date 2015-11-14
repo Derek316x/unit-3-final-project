@@ -6,6 +6,16 @@
 //  Copyright © 2015 dereknetto. All rights reserved.
 //
 
+/* TO DO
+ 1)
+ fix saving of calibration data. calibration data is being saved as all of the same values
+ 2015-11-14 03:44:19.420 MagnetDrawDemo[8083:710681] CALIBRATED
+ 2015-11-14 03:44:19.421 MagnetDrawDemo[8083:710681] left = -2.9,-656.7 | middle = -2.9,-656.7 | right = -2.9,-656.7 | bottom = -2.9,-656.7
+ 
+ 2)
+ map "paperXY" coordinates to screen
+ */
+
 #import "MagnetDrawViewController.h"
 #import "MagneticCalibrationData.h"
 #import "MagnetVector.h"
@@ -21,6 +31,8 @@
 
 @property (nonatomic) MagnetVector *vector;
 @property (nonatomic) MagneticCalibrationData *calibrationData;
+
+@property (nonatomic) UIView *myView;
 
 @end
 
@@ -95,11 +107,39 @@
     
     CGFloat rawHeadingAngle = [self rawHeadingAngle];
     
-    NSLog(@"X = %@, Y = %@, Z = %@, Magnitude = %@, angle = %f", Xstring,Ystring,Zstring,magnitudeString,rawHeadingAngle);
-    
     self.vector.magnitude = magnitude;
     self.vector.direction = rawHeadingAngle;
     
+    CGPoint paperXY = [self.vector XYpointFromMagnitudeAndDirection];
+    
+    NSLog(@"X = %@, Y = %@, Z = %@, Magnitude = %@, angle = %.1f, paperXY = %.1f,%.1f", Xstring,Ystring,Zstring,magnitudeString,rawHeadingAngle, paperXY.x, (paperXY.y *-1));
+    
+    
+    if ([self isCalibrated]) {
+        
+        if (self.myView == nil) { //only called once
+            [self addTestView];
+            
+            CGPoint leftXY = [self.calibrationData.left XYpointFromMagnitudeAndDirection];
+            CGPoint middleXY = [self.calibrationData.middle XYpointFromMagnitudeAndDirection];
+            CGPoint rightXY = [self.calibrationData.right XYpointFromMagnitudeAndDirection];
+            CGPoint bottomXY = [self.calibrationData.bottom XYpointFromMagnitudeAndDirection];
+            
+            NSLog(@"CALIBRATED");
+            NSLog(@"left = %.1f,%.1f | middle = %.1f,%.1f | right = %.1f,%.1f | bottom = %.1f,%.1f",leftXY.x,leftXY.y,middleXY.x,middleXY.y,rightXY.x,rightXY.y,bottomXY.x,bottomXY.y);
+        }
+        
+        double screenWidth = (double)self.view.layer.bounds.size.width;
+        
+        //self.myView.layer.position =
+        
+    }
+}
+
+-(void)addTestView{
+    self.myView = [[UIView alloc] initWithFrame:CGRectMake(300, 300, 100, self.view.bounds.size.height/2)];
+    self.myView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.myView];
 }
 
 // This delegate method is invoked when the location managed encounters an error condition.
@@ -137,29 +177,53 @@
     if (yVec == 0 && xVec < 0) rawHeading = 180.0;
     if (yVec == 0 && xVec > 0) rawHeading = 0.0;
     rawHeading -=90;
+    
+    //added to fix -90 -> 0 being displayed for 270 -> 360
+    if (rawHeading <= 0) {
+        rawHeading +=270;
+    }
+    
     return rawHeading;
 }
 
+#pragma mark - calibration methods
+
+- (IBAction)calibrateLeft:(UIButton *)sender {
+    self.calibrationData.left = [[MagnetVector alloc] init];
+    self.calibrationData.left = self.vector;
+}
+
+- (IBAction)calibrateMiddle:(UIButton *)sender {
+    self.calibrationData.middle = [[MagnetVector alloc] init];
+    self.calibrationData.middle = self.vector;
+}
+
+- (IBAction)calibrateRight:(UIButton *)sender {
+    self.calibrationData.right = [[MagnetVector alloc] init];
+    self.calibrationData.right = self.vector;
+}
+
+- (IBAction)calibrateBottom:(UIButton *)sender {
+    self.calibrationData.bottom = [[MagnetVector alloc] init];
+    self.calibrationData.bottom = self.vector;
+}
+
+-(BOOL)isCalibrated{
+    if ((self.calibrationData.left != nil) &&
+        (self.calibrationData.middle != nil) &&
+        (self.calibrationData.right != nil) &&
+        (self.calibrationData.bottom != nil)){
+        return YES;
+    }
+    return NO;
+}
 
 #pragma mark - angle conversions
 + (CGFloat) degreesToRadians:(CGFloat) degrees {return degrees * M_PI / 180;};
 + (CGFloat) radiansToDegrees:(CGFloat) radians {return radians * 180/M_PI;};
 
-- (IBAction)calibrateLeft:(UIButton *)sender {
-    
-    
+-(void)printCGPoint:(CGPoint)point{
+    NSLog(@"%.1f,%.1f",point.x,point.y);
 }
-
-- (IBAction)calibrateMiddle:(UIButton *)sender {
-}
-
-- (IBAction)calibrateRight:(UIButton *)sender {
-}
-
-- (IBAction)calibrateBottom:(UIButton *)sender {
-}
-
-
-
 
 @end
