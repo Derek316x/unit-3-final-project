@@ -9,6 +9,8 @@
 /* TO DO
  1)
  map "paperXY" coordinates to screen
+ 
+ 2) implement a displacement vector?
  */
 
 #import "MagnetDrawViewController.h"
@@ -88,16 +90,23 @@
     self.vector.magnitude = sqrt(heading.x*heading.x + heading.y*heading.y + heading.z*heading.z);
     self.vector.direction = [self rawHeadingAngleInDeg];
     
+    [self logDebugData];
+    
     if ([self isCalibrated]) {
         
         if (self.myView == nil) { //only called once
             [self addTestView];
             [self logCalibrationData];
         }
-        
-        //self.myView.layer.position =
-        
+    //insert code to move view
+        [self moveBox];
     }
+}
+
+-(void)moveBox{
+    CGPoint paperXY = [self.vector XYpointFromMagnitudeAndDirectionInDegrees];
+    paperXY.y = paperXY.y * -1;
+    self.myView.layer.position = CGPointMake(self.myView.layer.position.x, paperXY.y);
 }
 
 // This delegate method is invoked when the location managed encounters an error condition.

@@ -32,8 +32,6 @@
     return self;
 }
 
-
-
 -(CGPoint)XYpointFromMagnitudeAndDirectionInDegrees{
     
     CGFloat x = self.magnitude * cos([self degreesToRadians:self.direction]);
