@@ -21,4 +21,17 @@
     return self;
 }
 
+-(CGPoint)XYpointFromMagnitudeAndDirection{
+    
+    CGFloat x = self.magnitude * cos([self degreesToRadians:self.direction]);
+    CGFloat y = self.magnitude * sin([self degreesToRadians:self.direction]);
+    
+    return CGPointMake(x, y);
+}
+
+
+#pragma mark - angle conversions
+- (CGFloat) degreesToRadians:(CGFloat) degrees {return degrees * M_PI / 180;};
+- (CGFloat) radiansToDegrees:(CGFloat) radians {return radians * 180/M_PI;};
+
 @end
