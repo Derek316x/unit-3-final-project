@@ -11,6 +11,17 @@
 @implementation MagnetVector
 
 
+-(id)initWithVector:(MagnetVector *)vector{
+    
+    self = [super init];
+    
+    self.magnitude = vector.magnitude;
+    self.direction = vector.direction;
+    
+    return self;
+}
+
+
 -(id)initWithMagnitude:(CGFloat)magnitude AndDirection:(CGFloat)direction{
     
     self = [super init];
@@ -21,7 +32,9 @@
     return self;
 }
 
--(CGPoint)XYpointFromMagnitudeAndDirection{
+
+
+-(CGPoint)XYpointFromMagnitudeAndDirectionInDegrees{
     
     CGFloat x = self.magnitude * cos([self degreesToRadians:self.direction]);
     CGFloat y = self.magnitude * sin([self degreesToRadians:self.direction]);

@@ -14,7 +14,12 @@
 @property (nonatomic) CGFloat magnitude;
 @property (nonatomic) CGFloat direction;
 
--(CGPoint)XYpointFromMagnitudeAndDirection;
+
+-(id)initWithVector:(MagnetVector *)vector;
+-(id)initWithMagnitude:(CGFloat)magnitude AndDirection:(CGFloat)direction;
+
+-(CGPoint)XYpointFromMagnitudeAndDirectionInDegrees;
+
 
 
 @end
