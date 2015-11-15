@@ -16,7 +16,7 @@
     CGPoint currentPoint;
     CGPoint location;
     NSDate *lastClick;
-   // BOOL mouseSwiped;
+    BOOL mouseSwiped;
     UIImageView *drawImage;
     UIImageView *frontImage;
 }
