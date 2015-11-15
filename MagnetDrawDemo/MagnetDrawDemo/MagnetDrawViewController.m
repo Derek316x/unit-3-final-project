@@ -10,7 +10,7 @@
  1)
  map "paperXY" coordinates to screen
  
- 2) implement a displacement vector?
+ 2) implement a displacement vector from last 5 d
  */
 
 #import "MagnetDrawViewController.h"
@@ -119,6 +119,7 @@
     }
 //}
 
+<<<<<<< 1258c71f33452e7cc72a0de87b9c8565edbffc0f
 -(void)moveBox:(CGPoint)point{
    // self.myView.layer.position = point;
     
@@ -142,6 +143,8 @@
 }
 
 
+=======
+>>>>>>> 4
 // This delegate method is invoked when the location managed encounters an error condition.
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     if ([error code] == kCLErrorDenied) {
@@ -150,6 +153,12 @@
     } else if ([error code] == kCLErrorHeadingFailure) {
         // This error indicates that the heading could not be determined, most likely because of strong magnetic interference.
     }
+}
+
+-(void)moveBox{
+    CGPoint paperXY = [self.vector XYpointFromMagnitudeAndDirectionInDegrees];
+    paperXY.y = paperXY.y * -1;
+    self.myView.layer.position = CGPointMake(self.myView.layer.position.x, paperXY.y);
 }
 
 -(void)addTestView{
@@ -187,9 +196,9 @@
     
     //added to fix -90 -> 0 being displayed for 270 -> 360
     //may need to remove this
-    if (rawHeading < 0) {
-        rawHeading +=270;
-    }
+//    if (rawHeading < 0) {
+//        rawHeading +=270;
+//    }
     
     return rawHeading;
 }
