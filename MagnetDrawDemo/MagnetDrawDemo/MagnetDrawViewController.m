@@ -62,6 +62,17 @@
     
     //initialize calibration vector
     self.calibrationData = [[MagneticCalibrationData alloc] init];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    drawImage.image = [defaults objectForKey:@"drawImageKey"];
+    drawImage = [[UIImageView alloc] initWithImage:nil];
+    drawImage.frame = self.view.frame;
+    [self.view addSubview:drawImage];
+
+    
+  //  [self moveBox:CGPointMake(0, 0)];
+   // [self moveBox:CGPointMake(568, 320)];
+    
 }
 
 -(void)checkLocationServicesAuthorization{
@@ -92,22 +103,44 @@
     
     [self logDebugData];
     
-    if ([self isCalibrated]) {
+ //   if ([self isCalibrated]) {
         
         if (self.myView == nil) { //only called once
             [self addTestView];
             [self logCalibrationData];
         }
     //insert code to move view
-        [self moveBox];
+        
+        CGPoint paperXY = [self.vector XYpointFromMagnitudeAndDirectionInDegrees];
+        //paperXY.y = paperXY.y * -1;
+        //CGPoint newPoint = CGPointMake(self.myView.layer.position.x, paperXY.y);
+        //[self moveBox:newPoint];
+        [self moveBox:paperXY];
     }
+//}
+
+-(void)moveBox:(CGPoint)point{
+   // self.myView.layer.position = point;
+    
+    UIGraphicsBeginImageContext(CGSizeMake(568, 320));
+    [drawImage.image drawInRect:CGRectMake(0, 0, 568, 320)];
+    CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
+    CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 5.0);
+    CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0, 1, 0, 1);
+    CGContextBeginPath(UIGraphicsGetCurrentContext());
+    CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
+    CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), point.x, point.y);
+    CGContextStrokePath(UIGraphicsGetCurrentContext());
+    
+    [drawImage setFrame:CGRectMake(0, 0, 568, 320)];
+    drawImage.image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    lastPoint = point;
+    
+    [self.view addSubview:drawImage];
+    
 }
 
--(void)moveBox{
-    CGPoint paperXY = [self.vector XYpointFromMagnitudeAndDirectionInDegrees];
-    paperXY.y = paperXY.y * -1;
-    self.myView.layer.position = CGPointMake(self.myView.layer.position.x, paperXY.y);
-}
 
 // This delegate method is invoked when the location managed encounters an error condition.
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
@@ -232,6 +265,7 @@
     //log stuff
     //NOTE WE ARE MULTIPLYING paperXY.y by -1 !!!!!!!
     NSLog(@"X = %@, Y = %@, Z = %@, Magnitude = %@, angle = %.1f, paperXY = %.1f,%.1f", Xstring,Ystring,Zstring,magnitudeString,rawHeadingAngleInDeg, paperXY.x, (paperXY.y *-1));
+    
 }
 
 @end
