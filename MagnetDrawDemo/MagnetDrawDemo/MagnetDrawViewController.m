@@ -119,7 +119,6 @@
     }
 //}
 
-<<<<<<< 1258c71f33452e7cc72a0de87b9c8565edbffc0f
 -(void)moveBox:(CGPoint)point{
    // self.myView.layer.position = point;
     
@@ -142,9 +141,6 @@
     
 }
 
-
-=======
->>>>>>> 4
 // This delegate method is invoked when the location managed encounters an error condition.
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     if ([error code] == kCLErrorDenied) {
