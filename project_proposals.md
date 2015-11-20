@@ -57,8 +57,13 @@ Pencraft is the most fun and enriching way for kids to enhance their handwriting
 
 ## Execution
 Please describe how you will build this app. Include: 
-  *  A detailed timeline for building the product, broken out by weekly sprints. Think about the user stories you would frame your weeks around. *Your polished MVP (baseline features) should be ready to demo by Demo 1 on Thursday 11/17/2015.*  
-  *  A breakdown of team member responsibilities. Team members should take ownership over a specific feature or aspect of the app.  
+ * Saturday November 21. Everything working. 
+ * Sunday November 22. Basic User Interface works. 
+ * Monday November 23. Create our first App, with all files together.
+ * Tuesday November 24. Present in class. 
+ * 
+ Team Members Responsibilites: 
+ *  Get the Magnet working 
 
 
 [Example of a project proposal (from Mozi)](https://github.com/jaellysbales/access-robot/blob/master/ProjectProposal.md)
