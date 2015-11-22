@@ -1,30 +1,41 @@
-## Weekly Retro Template  
+## Weekly Retro 11/22/2015
 
 **Goals for last week**:
+- get XY motion working
 
 **Goals for this week**:
+- implement new MVP for game
+- polish UI
+- begin presentation script
 
 **Guiding Questions** (consider before the meeting):
 
   *  What went well?
+  - finding new idea
   *  What should we do differently next time?
+  - choose a smaller scope
   *  What did we learn?
+  - projects are dynamic and can change
   *  What still puzzles us?
+  - XY
  
 **Team Member Analysis**:
 If you did not meet your goals, how will this affect the progression of the product? What will you do differently to meet your goals this week?
 
-  *  Team Member #1
-    * Goals/Responsibilities Last Week:
+  *  Team Member # 1 - Xiulan 
+    * Goals/Responsibilities Last Week: research drawing apps, collection view menu, logo design
         * Did you meet your goals/responsibilities last week? Why or why not?
-    * Goals/Responsibilities This Week:
-  *  Team Member #2    
-    * Goals/Responsibilities Last Week:
+        - yes
+    * Goals/Responsibilities This Week: make a game with 1D motion, simple logo design
+  *  Team Member #2 - Christian 
+    * Goals/Responsibilities Last Week: come up with universal UI, XY axis motion
          * Did you meet your goals/responsibilities last week? Why or why not?
-    * Goals/Responsibilities This Week:
-  *  Team Member #3
-    * Goals/Responsibilities Last Week:
+         - no, XY axis motion was more complicated than expected
+    * Goals/Responsibilities This Week: get MVP for new idea, polish UI
+  *  Team Member #3 - Derek
+    * Goals/Responsibilities Last Week: get 2D motion working, find new ways to implement magnetic controls
         * Did you meet your goals/responsibilities last week? Why or why not?
+        - we pivoted to a game with magnetic controls; 2D not working
     * Goals/Responsibilities This Week:
   *  (Team Member #4)
     * Goals/Responsibilities Last Week:
