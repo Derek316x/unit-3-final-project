@@ -11,13 +11,13 @@
 **Guiding Questions** (consider before the meeting):
 
   *  What went well?
-  - finding new idea
+  -  finding new idea 
   *  What should we do differently next time?
-  - choose a smaller scope
+  - choose a smaller scope 
   *  What did we learn?
-  - projects are dynamic and can change
+  - projects are dynamic and can change 
   *  What still puzzles us?
-  - XY
+  - XY 
  
 **Team Member Analysis**:
 If you did not meet your goals, how will this affect the progression of the product? What will you do differently to meet your goals this week?
