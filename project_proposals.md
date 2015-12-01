@@ -2,7 +2,7 @@
 # Access Code 2.2 Final Project Proposal
 ---
 **Project Name:**
-Pencraft
+MagMo
 
 **Team Name:**
 Phist
@@ -15,45 +15,34 @@ Phist
 
 ## The Problem 
 
-**"An estimated 25–33% of students are struggling to achieve competency in handwriting."**
-- Conti, G. “Handwriting Characteristics and the Prediction of Illegibility in Third and Fifth Grade Students.” Presented at Handwriting in the 21st Century?: An Educational Summit, Washington, D.C., January 23, 2012.
-
-**"Illegible handwriting is a problem for a large number of children…it can affect [children] not only personally (their self-esteem), but also academically, and their careers in the future. So, it’s got a very long trajectory."**
-- Dr. Gerry Conti, assistant professor of occupational therapy at Wayne State University
-
-**"Manuscript handwriting instruction is only required until Grade 1, but fluency and automaticity in handwriting have been shown to develop well beyond then."**
-- Graham, S., and Santangelo, T. “A Meta-Analysis of the Effectiveness of Teaching Handwriting.” Presented at Handwriting in the 21st Century?: An Educational Summit, Washington, D.C., January 23, 2012.
-
-**[Doubt about the value of handwriting instruction] is similar to what happened with math as calculators and computers came into vogue…people wondered whether students needed to learn how to do math. The answer in both cases is absolutely “yes.” Writing is not obsolete.**
-- Daniel A. Domenech, executive director of the American Association of School Administrators
+**"When using a touch screen for mobile gaming, one's fingers obstruct the view and make more than half the screen unusable "**
 
 ###Market Size###
-**56% of children between the ages of 0 to 5 have access to an iPad in the home.**
-- Source: Tech and Play
-- http://www.techandplay.org/reports/TAP_Final_Report.pdf
+**Gamers come in all ages, from kids at home or on road trips to adults commuting every day.**
+- The global mobile games market will grow 27.3% annually to double in 2016 and reach $23.9 billion.
+- This growth is fueled by an increase in the number of players, payers as well as a higher average spend per paying mobile gamer.
+- The tablet games market will show 400% growth until 2016, to reach $10 billion.
+- Already 966 million, or 78% of all 1.2bn gamers worldwide, play mobile games.
 
-**60% of parents report downloading apps to support their children's learning.**
-- Source: Tech and Play
+Read more at http://www.newzoo.com/insights/infographic-mobile-games-market-to-double-in-size-until-2016-and-reach-23-9bn/
+
 
 ###User###
-Elementary school students (Pre-K to 4th Grade) who have access to an iPad   
-Buyer: Parents of school students
+
+** ages 6 and up **
 
 ###Competitors###
-Osmo  
-My First Little Writer  
-Use Your Handwriting  
-iTrace Free  
+Though there are a few "joy sticks" out in the market, there are no apps that utilize magnet technology to control your gaming experience 
 
 ###Use Case###
-Parent downloads app for child. The child writes/draws with magnetic pen for entertainment / extracurricular enrichment.
+users install the app and have the option of purchasing one of our magnets or using one of thier own.  note: some magnets are not strong enough and others can be too powerful.  we recomend purchasing one of our MagMo magnets (patent pending)
 
 ## The Solution 
-Pencraft is the most fun and enriching way for kids to enhance their handwriting skills.  
-1. User writes on physical paper using the magnetic pen.   
-2. Pen strokes are displayed on the iPhone's screen in real-time.  
-3. User taps submit button when done writing.  
-4. Computer vision algorithms score handwriting accuracy.  
+MagMo the first magnet-based iOS game. Use our magnetic magic to control the action on your screen!  
+1. User download MagMo app and purchase the MagMo magnets.   
+2. User use MagMo magnet to control the action on the screen.  
+3. User plays the game by using the MagMo maget without holding the phone.  
+4. User can see the full screen while playing games.  
 
 ## Execution
 Please describe how you will build this app. Include: 
