@@ -13,8 +13,6 @@
 #import "MagneticCalibrationData.h"
 
 
-#import "SKPViewController.h"
-
 @interface MagnetManager : NSObject<CLLocationManagerDelegate>
 
 @property (nonatomic) CLLocationManager *locationManager;
@@ -29,15 +27,19 @@
 
 @property(nonatomic) double topCalibrationVal;
 @property(nonatomic) double bottomCalibrationVal;
+@property(nonatomic) double leftCalibrationVal;
+@property(nonatomic) double rightCalibrationVal;
+
 @property(nonatomic) BOOL isTopBottomCalibrated;
+@property(nonatomic) BOOL isLeftRightCalibrated;
 
 @property (nonatomic) UIView *myView;
 
 @property (nonatomic, copy) void (^onHeadingUpdateListener)(CLHeading *);
 
 @property(nonatomic) BOOL isPlayingPong;
+@property(nonatomic) BOOL isPlayingJump;
 
-@property (nonatomic) SKPViewController *pongVC;
 
 - (void) setup;
 -(void)checkLocationServicesAuthorization;

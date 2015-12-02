@@ -25,6 +25,7 @@
     
     self.isTopBottomCalibrated = false;
     self.isPlayingPong = false;
+    self.isPlayingJump = false;
     
     [self checkLocationServicesAuthorization];
     
@@ -77,6 +78,8 @@
     
     if (self.isPlayingPong == true) {
          self.onHeadingUpdateListener(heading);
+    } else if (self.isPlayingJump == true){
+        self.onHeadingUpdateListener(heading);
     }
    
     
@@ -175,26 +178,9 @@
     return NO;
 }
 
-//-(BOOL)isTopBottomCalibrated{
-//    if ((self.topCalibrationVal != nil) &&
-//        (self.bottomCalibrationVal != nil)){
-//        return YES;
-//    }
-//    return NO;
-//}
-
 -(void)calibrateTopBottom{
     
-    
-//    UIWindow *window=[UIApplication sharedApplication].keyWindow;
-//    UIViewController *root = [window rootViewController];
-//
     CalibrateViewController *calibrateVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"CalibrateID"];
-    
-//    UIStoryboard *storyboard = root.storyboard;
-//    CalibrateViewController *vcc =(CalibrateViewController *) [storyboard instantiateViewControllerWithIdentifier:@"CalibrateID"];
-//
-//    [root presentViewController:vcc animated:YES completion:nil];
     
     UIViewController *top = [UIApplication sharedApplication].keyWindow.rootViewController;
     [top presentViewController:calibrateVC animated:YES completion: nil];

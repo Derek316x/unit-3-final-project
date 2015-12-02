@@ -11,14 +11,16 @@
 #import <SpriteKit/SpriteKit.h>
 #import "CalibrateViewController.h"
 
+#import "UINavigationController+Orientation.h"
+
+
 @implementation SKPViewController
 
-- (void)loadView{
+-(void)loadView{
     self.view = [[SKView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
 
 //    // Configure the view.
@@ -43,25 +45,6 @@
     [skView presentScene:scene];
 }
 
-- (BOOL)shouldAutorotate
-{
-    return YES;
-}
-
-- (NSUInteger)supportedInterfaceOrientations
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return UIInterfaceOrientationMaskAllButUpsideDown;
-    } else {
-        return UIInterfaceOrientationMaskAll;
-    }
-}
-
--(BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
-
 -(void)pongCalibrateTopBottom{
     
     CalibrateViewController *calibrateVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"CalibrateID"];
@@ -69,6 +52,15 @@
     UIViewController *top = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
     [top presentViewController:calibrateVC animated:YES completion: nil];
     
+}
+
+- (BOOL)shouldAutorotate{
+    //returns true if want to allow orientation change
+    return TRUE;
+}
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    //decide number of origination tob supported by Viewcontroller.
+    return UIInterfaceOrientationMaskLandscapeRight;
 }
 
 @end

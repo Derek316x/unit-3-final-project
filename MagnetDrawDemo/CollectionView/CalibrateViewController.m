@@ -9,12 +9,16 @@
 #import "CalibrateViewController.h"
 #import "MagnetManager.h"
 
+#import "UINavigationController+Orientation.h"
+
 @interface CalibrateViewController ()
 
 @property (nonatomic) MagnetManager *manager;
 
 @property (nonatomic) BOOL isBottomSet;
 @property (nonatomic) BOOL isTopSet;
+@property (nonatomic) BOOL isLeftSet;
+@property (nonatomic) BOOL isRightSet;
 
 @end
 
@@ -42,14 +46,40 @@
     [self dismissCalibrateVC];
 }
 
+- (IBAction)leftButtonTapped:(UIButton *)sender {
+    self.manager.leftCalibrationVal = self.manager.heading.x;
+    NSLog(@"Left calibration value set to: %f",self.manager.leftCalibrationVal);
+    self.isLeftSet = true;
+    [self dismissCalibrateVC];
+}
+
+
+- (IBAction)rightButtonTapped:(UIButton *)sender {
+    self.manager.rightCalibrationVal = self.manager.heading.x;
+    NSLog(@"Right calibration value set to: %f",self.manager.rightCalibrationVal);
+    self.isRightSet = true;
+    [self dismissCalibrateVC];
+}
+
 -(void)dismissCalibrateVC{
-    if (self.isBottomSet == true && self.isTopSet == true) {
+    
+    if (self.isBottomSet == true && self.isTopSet == true && self.isLeftSet == true && self.isRightSet == true) {
         
-        self.manager.isTopBottomCalibrated = true;
          [self dismissViewControllerAnimated:YES completion:^{
              self.manager.isTopBottomCalibrated = true;
+             self.manager.isLeftRightCalibrated = true;
          }];
     }
+}
+
+- (BOOL)shouldAutorotate{
+    //returns true if want to allow orientation change
+    return YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    //decide number of origination tob supported by Viewcontroller.
+    return UIInterfaceOrientationMaskAllButUpsideDown;
 }
 
 

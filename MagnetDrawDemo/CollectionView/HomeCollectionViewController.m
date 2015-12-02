@@ -10,9 +10,13 @@
 #import "HomeCollectionViewCell.h"
 #import "DetailViewController.h"
 #import "CalibrateViewController.h"
-#import "UIImage+animatedGIF.h"
 
-#import "SKPViewController.h"
+#import "UIImage+animatedGIF.h"
+#import "UINavigationController+Orientation.h"
+
+#import "SKPViewController.h" //pong
+#import "GameViewController.h" //jump
+
 
 #import "CollectionView-Swift.h"
 
@@ -31,20 +35,11 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-   // [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
-    
     self.dataArray = [[NSMutableArray alloc] init];
     
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     
     self.backgroundImageView.image = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:@"http://i.imgur.com/RuJYgPu.gif"]];
-
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -61,72 +56,52 @@ static NSString * const reuseIdentifier = @"Cell";
     
     HomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
-    
     cell.cellImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%li", (long)indexPath.row]];
                                 
     return cell;
 }
 
-
-#pragma mark - Navigation
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-
-}
-
 #pragma mark <UICollectionViewDelegate>
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 
     if (indexPath.row == 0) { //pong
         SKPViewController *pongVC = [[SKPViewController alloc] init];
         [self.navigationController presentViewController:pongVC animated:YES completion:^{}];
     }
-    
     else if (indexPath.row == 1){//drop charge
         
     }
-    else if (indexPath.row == 2){//space invaders
+    else if (indexPath.row == 2){//jump
         
+        GameViewController *jumpVC = [[GameViewController alloc] init];
+        [self.navigationController pushViewController:jumpVC animated:YES];
     }
-    else if (indexPath.row == 3){//jump
-        GameViewController *gameVC = [[GameViewController alloc] init];
-        
+    else if (indexPath.row == 3){//space invaders
+
     }
     
     if (indexPath.row == 4) { //calibrate
-        [self pongCalibrateTopBottom];
+        [self showCalibrateViewController];
     }
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
-
-- (void)collectionView:(UICollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
-
-- (void)collectionView:(UICollectionView *)collectionView didUnhighlightItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
-
--(void)pongCalibrateTopBottom{
+-(void)showCalibrateViewController{
     
     CalibrateViewController *calibrateVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"CalibrateID"];
     
-    
     [self presentViewController:calibrateVC animated:YES completion:nil];
     
-//    UIViewController *top = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-//    [top presentViewController:calibrateVC animated:YES completion: nil];
-    
+}
+
+- (BOOL)shouldAutorotate{
+    //returns true if want to allow orientation change
+    return NO;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    //decide number of origination tob supported by Viewcontroller.
+    return UIInterfaceOrientationMaskLandscapeRight;
 }
 
 @end
