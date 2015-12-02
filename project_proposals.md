@@ -2,7 +2,7 @@
 # Access Code 2.2 Final Project Proposal
 ---
 **Project Name:**
-MagMo
+Pencraft
 
 **Team Name:**
 Phist
@@ -35,13 +35,13 @@ Read more at http://www.newzoo.com/insights/infographic-mobile-games-market-to-d
 Though there are a few "joy sticks" out in the market, there are no apps that utilize magnet technology to control your gaming experience 
 
 ###Use Case###
-users install the app and have the option of purchasing one of our magnets or using one of thier own.  note: some magnets are not strong enough and others can be too powerful.  we recomend purchasing one of our MagMo magnets (patent pending)
+users install the app and have the option of purchasing one of our magnets or using one of thier own.  note: some magnets are not strong enough and others can be too powerful.  we recomend purchasing one of our Pencraft magnets (patent pending)
 
 ## The Solution 
-MagMo the first magnet-based iOS game. Use our magnetic magic to control the action on your screen!  
-1. User download MagMo app and purchase the MagMo magnets.   
-2. User use MagMo magnet to control the action on the screen.  
-3. User plays the game by using the MagMo maget without holding the phone.  
+Pencraft the first magnet-based iOS game. Use our magnetic magic to control the action on your screen!  
+1. User download Pencraft app and purchase the Pencraft magnets.   
+2. User use Pencraft magnet to control the action on the screen.  
+3. User plays the game by using the Pencraft maget without holding the phone.  
 4. User can see the full screen while playing games.  
 
 ## Execution
