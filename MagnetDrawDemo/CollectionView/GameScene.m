@@ -40,12 +40,6 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
     // Height at which level ends
     int _endLevelY;
     
-    // Motion manager for accelerometer
-    CMMotionManager *_motionManager;
-    
-    // Acceleration value from accelerometer
-    CGFloat _xAcceleration;
-    
     // Labels for score and stars
     SKLabelNode *_lblScore;
     SKLabelNode *_lblStars;
@@ -55,6 +49,7 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
     
     // Game over dude !
     BOOL _gameOver;
+    
 }
 @end
 
@@ -74,6 +69,8 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
         self.manager.onHeadingUpdateListener = ^(CLHeading *heading) {
             [weakSelf movePlayer];
         };
+        
+        self.lastTenXPositions = [[NSMutableArray alloc] init];
         
         self.backgroundColor = [SKColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
         
@@ -192,18 +189,6 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
         [_lblScore setText:@"0"];
         [_hudNode addChild:_lblScore];
         
-        // CoreMotion
-        _motionManager = [[CMMotionManager alloc] init];
-        // 1
-        _motionManager.accelerometerUpdateInterval = 0.2;
-        // 2
-        [_motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue]
-                                             withHandler:^(CMAccelerometerData  *accelerometerData, NSError *error) {
-                                                 // 3
-                                                 CMAcceleration acceleration = accelerometerData.acceleration;
-                                                 // 4
-                                                 _xAcceleration = (acceleration.x * 0.75) + (_xAcceleration * 0.25);
-                                             }];
     }
     return self;
 }
@@ -294,7 +279,7 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
         // Start the player by putting them into the physics simulation
         _player.physicsBody.dynamic = YES;
         // 4
-        [_player.physicsBody applyImpulse:CGVectorMake(0.0f, 20.0f)];
+        [_player.physicsBody applyImpulse:CGVectorMake(0.0f, 25.0f)];
     }
     
 }
@@ -446,21 +431,6 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
     NSLog(@"xHeading = %f",self.manager.heading.x);
 }
 
-- (void) didSimulatePhysics
-{
-    // 1
-    // Set velocity based on x-axis acceleration
-    _player.physicsBody.velocity = CGVectorMake(_xAcceleration * 400.0f, _player.physicsBody.velocity.dy);
-    
-    // 2
-    // Check x bounds
-    if (_player.position.x < -20.0f) {
-        _player.position = CGPointMake(340.0f, _player.position.y);
-    } else if (_player.position.x > 340.0f) {
-        _player.position = CGPointMake(-20.0f, _player.position.y);
-    }
-    return;
-}
 
 - (void) endGame
 {
@@ -498,8 +468,21 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
         CGFloat slope = (self.size.width - 0.0)/ (self.manager.rightCalibrationVal - self.manager.leftCalibrationVal);
         CGFloat screenX = slope * (magX - self.manager.leftCalibrationVal) + 0.0;
         
-        //update player position based on magnet position
-        [_player setPosition: CGPointMake(screenX, _player.position.y)];
+        //keep track of our lastXPositions
+        if (self.lastTenXPositions.count == 15) {
+            [self.lastTenXPositions removeObjectAtIndex:0];
+        }
+        [self.lastTenXPositions addObject:[NSNumber numberWithDouble:screenX]];
+        
+        //set player position to the average of the last positions
+        
+        NSNumber * sum = [self.lastTenXPositions valueForKeyPath:@"@sum.self"];
+        CGFloat avgX = [sum doubleValue]/(self.lastTenXPositions.count);
+        
+        NSLog(@"avgX = %f",avgX);
+        
+            //update player position based on magnet position
+            [_player setPosition: CGPointMake(avgX, _player.position.y)];
     }
    
 }

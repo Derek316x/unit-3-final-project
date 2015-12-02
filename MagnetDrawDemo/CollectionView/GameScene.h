@@ -12,5 +12,6 @@
 @interface GameScene : SKScene
 
 @property(nonatomic) MagnetManager *manager;
+@property(nonatomic) NSMutableArray *lastTenXPositions;
 
 @end
