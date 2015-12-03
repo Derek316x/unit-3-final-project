@@ -475,7 +475,6 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
         [self.lastTenXPositions addObject:[NSNumber numberWithDouble:screenX]];
         
         //set player position to the average of the last positions
-        
         NSNumber * sum = [self.lastTenXPositions valueForKeyPath:@"@sum.self"];
         CGFloat avgX = [sum doubleValue]/(self.lastTenXPositions.count);
         

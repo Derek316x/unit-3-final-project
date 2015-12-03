@@ -16,6 +16,7 @@
 
 #import "SKPViewController.h" //pong
 #import "GameViewController.h" //jump
+//#import "ViewController.h" //flappy
 
 
 #import "CollectionView-Swift.h"
@@ -49,7 +50,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -84,6 +85,14 @@ static NSString * const reuseIdentifier = @"Cell";
     if (indexPath.row == 4) { //calibrate
         [self showCalibrateViewController];
     }
+    
+    if (indexPath.row == 5) { //flappy
+        CalibrateViewController *flappyVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"FlappyID"];
+        
+        [self presentViewController:flappyVC animated:YES completion:nil];
+    }
+    
+    
 }
 
 -(void)showCalibrateViewController{
