@@ -87,9 +87,9 @@ static NSString * const reuseIdentifier = @"Cell";
     }
     
     if (indexPath.row == 5) { //flappy
-        CalibrateViewController *flappyVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"FlappyID"];
-        
-        [self presentViewController:flappyVC animated:YES completion:nil];
+//        CalibrateViewController *flappyVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"FlappyID"];
+//        
+//        [self presentViewController:flappyVC animated:YES completion:nil];
     }
     
     
