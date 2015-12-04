@@ -6,6 +6,10 @@
 //  Copyright (c) 2013년 Seung Kyun Nam. All rights reserved.
 //
 
+#import "Macros.h"
+#import "Constants.h"
+
+#import "FLAPPYMath.h"
 
 #import "FLAPPYScene.h"
 #import "FLAPPYSKScrollingNode.h"

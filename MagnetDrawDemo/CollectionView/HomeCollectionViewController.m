@@ -16,7 +16,7 @@
 
 #import "SKPViewController.h" //pong
 #import "GameViewController.h" //jump
-//#import "ViewController.h" //flappy
+#import "FLAPPYViewController.h" //flappy
 
 
 #import "CollectionView-Swift.h"
@@ -97,9 +97,9 @@ static NSString * const reuseIdentifier = @"Cell";
     }
     
     if (indexPath.row == 5) { //flappy
-//        CalibrateViewController *flappyVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"FlappyID"];
-//        
-//        [self presentViewController:flappyVC animated:YES completion:nil];
+        FLAPPYViewController *flappyVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"FlappyID"];
+        
+        [self presentViewController:flappyVC animated:YES completion:nil];
     }
     
     
