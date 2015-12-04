@@ -8,11 +8,14 @@
 
 #include <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import "FLAPPYScene.h"
 #import "ThreeFingerDismissViewController.h"
 
 
 
 @interface FLAPPYViewController : ThreeFingerDismissViewController<SceneDelegate>
+
+@property AVAudioPlayer *backgroundMusicPlayer;
 
 @end

@@ -400,17 +400,17 @@ static const uint32_t paddleCategory = 0x1 << 2;
         if (firstBody.node.position.x <= firstBody.node.frame.size.width)
         {
             [self pointForPlayer:2];
-            [self runAction:self.failSoundAction];
+            [self runAction:[SKAction playSoundFileNamed:@"stab.mp3" waitForCompletion:NO]];
         }
         //ball touched right side
         else if(firstBody.node.position.x >= (self.size.width - firstBody.node.frame.size.width))
         {
             [self pointForPlayer:1];
-            [self runAction:self.failSoundAction];
+            [self runAction:[SKAction playSoundFileNamed:@"stab.mp3" waitForCompletion:NO]];
         }
         else
         {
-            [self runAction:self.bounceSoundAction];
+            [self runAction:[SKAction playSoundFileNamed:@"bounce.mp3" waitForCompletion:NO]];
         }
     }
     //check if we have ball & paddle contact

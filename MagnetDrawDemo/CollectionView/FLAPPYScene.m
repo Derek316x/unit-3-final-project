@@ -248,6 +248,9 @@ static bool wasted = NO;
         if(X(topPipe) + WIDTH(topPipe)/2 > bird.position.x &&
            X(topPipe) + WIDTH(topPipe)/2 < bird.position.x + FLOOR_SCROLLING_SPEED){
             self.score +=1;
+            
+            [self runAction:[SKAction playSoundFileNamed:@"score.wav" waitForCompletion:NO]];
+            
             scoreLabel.text = [NSString stringWithFormat:@"%lu",self.score];
             if(self.score>=10){
                 scoreLabel.fontSize = 340;
@@ -265,6 +268,8 @@ static bool wasted = NO;
 
     wasted = true;
     [FLAPPYScore registerScore:self.score];
+    
+    [self runAction:[SKAction playSoundFileNamed:@"smack.wav" waitForCompletion:NO]];
     
     if([self.delegate respondsToSelector:@selector(eventWasted)]){
         [self.delegate eventWasted];

@@ -9,6 +9,7 @@
 #import "GameViewController.h"
 #import "GameScene.h"
 
+
 #import "UINavigationController+Orientation.h"
 
 @implementation GameViewController
@@ -40,6 +41,21 @@
     [skView presentScene:scene];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if (self.isMovingToParentViewController == NO)
+    {
+        [self setupBackgroundMusic];
+    }
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:YES];
+    [self.backgroundMusicPlayer stop];
+}
+
 - (BOOL)shouldAutorotate{
     //returns true if want to allow orientation change
     return YES;
@@ -49,6 +65,11 @@
     return UIInterfaceOrientationMaskPortrait;
 }
 
-
+-(void)setupBackgroundMusic{
+    NSString *pathForMP3 = [[NSBundle mainBundle] pathForResource: @"Struggle" ofType: @"mp3"];
+    NSURL *soundUrl = [NSURL fileURLWithPath:pathForMP3];
+    self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    [self.backgroundMusicPlayer play];
+}
 
 @end

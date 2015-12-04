@@ -66,6 +66,13 @@
 		6962297C1C1128CA002E038E /* FLAPPYSKScrollingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6962297B1C1128CA002E038E /* FLAPPYSKScrollingNode.m */; };
 		6962297F1C1128D5002E038E /* FLAPPYBirdNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6962297E1C1128D5002E038E /* FLAPPYBirdNode.m */; };
 		696229821C1128EF002E038E /* FLAPPYMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 696229811C1128EF002E038E /* FLAPPYMath.m */; };
+		699492D71C116A76008033C5 /* flap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 699492D61C116A76008033C5 /* flap.wav */; };
+		699492D91C116A7C008033C5 /* smack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 699492D81C116A7C008033C5 /* smack.wav */; };
+		699492DB1C116CE6008033C5 /* score.wav in Resources */ = {isa = PBXBuildFile; fileRef = 699492DA1C116CE6008033C5 /* score.wav */; };
+		699492DD1C11727C008033C5 /* 8BitBomber.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 699492DC1C11727C008033C5 /* 8BitBomber.mp3 */; };
+		699492DF1C1172A8008033C5 /* Struggle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 699492DE1C1172A8008033C5 /* Struggle.mp3 */; };
+		699492E11C11733C008033C5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699492E01C11733C008033C5 /* AVFoundation.framework */; };
+		699492E31C117A76008033C5 /* Nin10day.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 699492E21C117A76008033C5 /* Nin10day.mp3 */; };
 		69A5DC8F1C0B7D06004FF607 /* stab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DC8D1C0B7D06004FF607 /* stab.mp3 */; };
 		69A5DC901C0B7D06004FF607 /* bounce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DC8E1C0B7D06004FF607 /* bounce.mp3 */; };
 		69A5DC971C0B7DE9004FF607 /* MagnetVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DC921C0B7DE9004FF607 /* MagnetVector.m */; };
@@ -192,6 +199,13 @@
 		6962297E1C1128D5002E038E /* FLAPPYBirdNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAPPYBirdNode.m; sourceTree = "<group>"; };
 		696229801C1128EF002E038E /* FLAPPYMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAPPYMath.h; sourceTree = "<group>"; };
 		696229811C1128EF002E038E /* FLAPPYMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAPPYMath.m; sourceTree = "<group>"; };
+		699492D61C116A76008033C5 /* flap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flap.wav; sourceTree = "<group>"; };
+		699492D81C116A7C008033C5 /* smack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smack.wav; sourceTree = "<group>"; };
+		699492DA1C116CE6008033C5 /* score.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score.wav; sourceTree = "<group>"; };
+		699492DC1C11727C008033C5 /* 8BitBomber.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8BitBomber.mp3; sourceTree = "<group>"; };
+		699492DE1C1172A8008033C5 /* Struggle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Struggle.mp3; sourceTree = "<group>"; };
+		699492E01C11733C008033C5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		699492E21C117A76008033C5 /* Nin10day.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nin10day.mp3; sourceTree = "<group>"; };
 		69A5DC8D1C0B7D06004FF607 /* stab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stab.mp3; sourceTree = "<group>"; };
 		69A5DC8E1C0B7D06004FF607 /* bounce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bounce.mp3; sourceTree = "<group>"; };
 		69A5DC911C0B7DE9004FF607 /* MagnetVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnetVector.h; sourceTree = "<group>"; };
@@ -247,6 +261,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				699492E11C11733C008033C5 /* AVFoundation.framework in Frameworks */,
 				69F597461C0C10F400ED067E /* ImageIO.framework in Frameworks */,
 				69A5DCAD1C0B82B7004FF607 /* SpriteKit.framework in Frameworks */,
 				69A5DCAB1C0B82AF004FF607 /* UIKit.framework in Frameworks */,
@@ -395,6 +410,7 @@
 		69A5DCE21C0C04FB004FF607 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				699492E01C11733C008033C5 /* AVFoundation.framework */,
 				69F597451C0C10F300ED067E /* ImageIO.framework */,
 				69A5DCAC1C0B82B7004FF607 /* SpriteKit.framework */,
 				69A5DCAA1C0B82AF004FF607 /* UIKit.framework */,
@@ -451,6 +467,12 @@
 		D907AC901BFD3FE9005D30A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				699492E21C117A76008033C5 /* Nin10day.mp3 */,
+				699492DE1C1172A8008033C5 /* Struggle.mp3 */,
+				699492DC1C11727C008033C5 /* 8BitBomber.mp3 */,
+				699492DA1C116CE6008033C5 /* score.wav */,
+				699492D61C116A76008033C5 /* flap.wav */,
+				699492D81C116A7C008033C5 /* smack.wav */,
 				6962296A1C111EA3002E038E /* pencraft_icon-dark-01.png */,
 				696229651C111000002E038E /* BackgroundWarp.gif */,
 				69A5DC8D1C0B7D06004FF607 /* stab.mp3 */,
@@ -610,10 +632,13 @@
 				69A5DCE11C0C049C004FF607 /* dropcharge.png in Resources */,
 				692337121C0EF8960036A721 /* floor@2x.png in Resources */,
 				690ABE671C0E7FF200362C2C /* Background13.png in Resources */,
+				699492E31C117A76008033C5 /* Nin10day.mp3 in Resources */,
 				6923370F1C0EF8960036A721 /* bird_1@2x.png in Resources */,
 				693F9C341C0E731500BFFBB4 /* Assets.atlas in Resources */,
 				692337131C0EF8960036A721 /* game_over@2x.png in Resources */,
 				6923371B1C0EF8960036A721 /* pipe_top@2x.png in Resources */,
+				699492DD1C11727C008033C5 /* 8BitBomber.mp3 in Resources */,
+				699492D71C116A76008033C5 /* flap.wav in Resources */,
 				692337151C0EF8960036A721 /* medal_bronze@2x.png in Resources */,
 				69A5DC8F1C0B7D06004FF607 /* stab.mp3 in Resources */,
 				692337141C0EF8960036A721 /* get_ready@2x.png in Resources */,
@@ -628,6 +653,7 @@
 				69A5DCDF1C0C03BA004FF607 /* invaders.PNG in Resources */,
 				692336FE1C0EF7F20036A721 /* flappy.png in Resources */,
 				D907ACA01BFD3FEA005D30A9 /* Assets.xcassets in Resources */,
+				699492DB1C116CE6008033C5 /* score.wav in Resources */,
 				6923371C1C0EF8960036A721 /* taptap@2x.png in Resources */,
 				690ABE631C0E7FF200362C2C /* Background17.png in Resources */,
 				69A5DCE41C0C0561004FF607 /* calibrateimage.png in Resources */,
@@ -639,6 +665,7 @@
 				690ABE721C0E7FF200362C2C /* Background02.png in Resources */,
 				692336FB1C0ED0B20036A721 /* Info.plist in Resources */,
 				690ABE621C0E7FF200362C2C /* Background18.png in Resources */,
+				699492DF1C1172A8008033C5 /* Struggle.mp3 in Resources */,
 				690ABE6F1C0E7FF200362C2C /* Background05.png in Resources */,
 				690ABE651C0E7FF200362C2C /* Background15.png in Resources */,
 				690ABE681C0E7FF200362C2C /* Background12.png in Resources */,
@@ -647,6 +674,7 @@
 				696229661C111000002E038E /* BackgroundWarp.gif in Resources */,
 				690ABE6A1C0E7FF200362C2C /* Background10.png in Resources */,
 				69A5DCDD1C0C032B004FF607 /* jump.PNG in Resources */,
+				699492D91C116A7C008033C5 /* smack.wav in Resources */,
 				690ABE701C0E7FF200362C2C /* Background04.png in Resources */,
 				6923371A1C0EF8960036A721 /* pipe_bottom@2x.png in Resources */,
 				690ABE611C0E7FF200362C2C /* Background19.png in Resources */,

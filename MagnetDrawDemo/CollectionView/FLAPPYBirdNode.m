@@ -80,6 +80,7 @@ static bool goingUp = false;
     [self.physicsBody setVelocity:CGVectorMake(0, 0)];
     [self.physicsBody applyImpulse:CGVectorMake(0, 40)];
     [self runAction:self.flap];
+    [self runAction:[SKAction playSoundFileNamed:@"flap.wav" waitForCompletion:NO]];
 }
 
 @end

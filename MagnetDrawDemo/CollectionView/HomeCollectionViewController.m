@@ -18,12 +18,14 @@
 #import "GameViewController.h" //jump
 #import "FLAPPYViewController.h" //flappy
 
+#import <AVFoundation/AVFoundation.h>
 
 #import "CollectionView-Swift.h"
 
 @interface HomeCollectionViewController ()
 
 @property NSMutableArray *dataArray;
+@property AVAudioPlayer *backgroundMusicPlayer;
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
@@ -41,15 +43,33 @@ static NSString * const reuseIdentifier = @"Cell";
     self.dataArray = [[NSMutableArray alloc] init];
     
     [self.navigationController setNavigationBarHidden:YES animated:NO];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
-    
-   
+    if (self.isMovingToParentViewController == NO)
+    {
+        // we're already on the navigation stack
+        // another controller must have been popped off
+        
+        [self setupBackgroundMusic];
+        
+    }
 }
 
 -(void)setBackgroundImage{
     NSString *pathForGif = [[NSBundle mainBundle] pathForResource: @"BackgroundWarp" ofType: @"gif"];
     NSData *gifData = [NSData dataWithContentsOfFile: pathForGif];
     self.backgroundImageView.image = [UIImage animatedImageWithAnimatedGIFData:gifData];
+}
+
+-(void)setupBackgroundMusic{
+    NSString *pathForMP3 = [[NSBundle mainBundle] pathForResource: @"8BitBomber" ofType: @"mp3"];
+    NSURL *soundUrl = [NSURL fileURLWithPath:pathForMP3];
+    self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    [self.backgroundMusicPlayer play];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -74,6 +94,8 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDelegate>
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [self.backgroundMusicPlayer stop];
 
     if (indexPath.row == 0) { //pong
         SKPViewController *pongVC = [[SKPViewController alloc] init];
@@ -83,10 +105,8 @@ static NSString * const reuseIdentifier = @"Cell";
         
     }
     else if (indexPath.row == 2){//jump
-        
         GameViewController *jumpVC = [[GameViewController alloc] init];
         [self presentViewController:jumpVC animated:YES completion:nil];
-//        [self.navigationController pushViewController:jumpVC animated:YES];
     }
     else if (indexPath.row == 3){//space invaders
 
@@ -98,7 +118,6 @@ static NSString * const reuseIdentifier = @"Cell";
     
     if (indexPath.row == 5) { //flappy
         FLAPPYViewController *flappyVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"FlappyID"];
-        
         [self presentViewController:flappyVC animated:YES completion:nil];
     }
     

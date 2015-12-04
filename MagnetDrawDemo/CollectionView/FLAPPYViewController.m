@@ -51,6 +51,21 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if (self.isMovingToParentViewController == NO)
+    {
+        [self setupBackgroundMusic];
+    }
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:YES];
+    [self.backgroundMusicPlayer stop];
+}
+
 
 - (BOOL)prefersStatusBarHidden
 {
@@ -131,17 +146,12 @@
     [[self.view layer] addAnimation:animation forKey:@"position"];
 }
 
-//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//    
-//    //3 finger touch to quit
-//    //end game with 3 finger touch
-//    if (touches.count == 3) {
-//        MagnetManager *manager = [MagnetManager sharedManager];
-//        manager.isPlayingFlappy = NO;
-//        NSLog(@"3 fingers in flappy VC!!!!!!");
-//        
-//        [self dismissViewControllerAnimated:YES completion:nil];
-//    }
-//}
+
+-(void)setupBackgroundMusic{
+    NSString *pathForMP3 = [[NSBundle mainBundle] pathForResource: @"Nin10day" ofType: @"mp3"];
+    NSURL *soundUrl = [NSURL fileURLWithPath:pathForMP3];
+    self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    [self.backgroundMusicPlayer play];
+}
 
 @end
