@@ -25,6 +25,9 @@
 @property (nonatomic) MagnetManager *manager;
 
 
+@property BOOL gameStarted;
+
+
 - (void) startGame;
 
 @end

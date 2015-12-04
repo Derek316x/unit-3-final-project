@@ -151,6 +151,7 @@
     NSString *pathForMP3 = [[NSBundle mainBundle] pathForResource: @"Nin10day" ofType: @"mp3"];
     NSURL *soundUrl = [NSURL fileURLWithPath:pathForMP3];
     self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    [self.backgroundMusicPlayer setVolume:0.25];
     [self.backgroundMusicPlayer play];
 }
 

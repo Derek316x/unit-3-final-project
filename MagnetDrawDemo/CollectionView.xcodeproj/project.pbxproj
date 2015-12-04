@@ -73,6 +73,9 @@
 		699492DF1C1172A8008033C5 /* Struggle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 699492DE1C1172A8008033C5 /* Struggle.mp3 */; };
 		699492E11C11733C008033C5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699492E01C11733C008033C5 /* AVFoundation.framework */; };
 		699492E31C117A76008033C5 /* Nin10day.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 699492E21C117A76008033C5 /* Nin10day.mp3 */; };
+		699492E81C1181F8008033C5 /* back6long@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 699492E71C1181F8008033C5 /* back6long@2x.png */; };
+		699492EC1C1182A6008033C5 /* back578@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 699492EB1C1182A6008033C5 /* back578@2x.png */; };
+		699492EE1C118350008033C5 /* back640x1334@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 699492ED1C118350008033C5 /* back640x1334@2x.png */; };
 		69A5DC8F1C0B7D06004FF607 /* stab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DC8D1C0B7D06004FF607 /* stab.mp3 */; };
 		69A5DC901C0B7D06004FF607 /* bounce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DC8E1C0B7D06004FF607 /* bounce.mp3 */; };
 		69A5DC971C0B7DE9004FF607 /* MagnetVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DC921C0B7DE9004FF607 /* MagnetVector.m */; };
@@ -206,6 +209,9 @@
 		699492DE1C1172A8008033C5 /* Struggle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Struggle.mp3; sourceTree = "<group>"; };
 		699492E01C11733C008033C5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		699492E21C117A76008033C5 /* Nin10day.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nin10day.mp3; sourceTree = "<group>"; };
+		699492E71C1181F8008033C5 /* back6long@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back6long@2x.png"; sourceTree = "<group>"; };
+		699492EB1C1182A6008033C5 /* back578@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back578@2x.png"; sourceTree = "<group>"; };
+		699492ED1C118350008033C5 /* back640x1334@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back640x1334@2x.png"; sourceTree = "<group>"; };
 		69A5DC8D1C0B7D06004FF607 /* stab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stab.mp3; sourceTree = "<group>"; };
 		69A5DC8E1C0B7D06004FF607 /* bounce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bounce.mp3; sourceTree = "<group>"; };
 		69A5DC911C0B7DE9004FF607 /* MagnetVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnetVector.h; sourceTree = "<group>"; };
@@ -483,6 +489,9 @@
 				69A5DCE51C0C0570004FF607 /* ping.PNG */,
 				69A5DCDC1C0C032B004FF607 /* jump.PNG */,
 				692336FF1C0EF8960036A721 /* back@2x.png */,
+				699492ED1C118350008033C5 /* back640x1334@2x.png */,
+				699492EB1C1182A6008033C5 /* back578@2x.png */,
+				699492E71C1181F8008033C5 /* back6long@2x.png */,
 				692337001C0EF8960036A721 /* bird_1@2x.png */,
 				692337011C0EF8960036A721 /* bird_2@2x.png */,
 				692337021C0EF8960036A721 /* bird_3@2x.png */,
@@ -634,6 +643,7 @@
 				690ABE671C0E7FF200362C2C /* Background13.png in Resources */,
 				699492E31C117A76008033C5 /* Nin10day.mp3 in Resources */,
 				6923370F1C0EF8960036A721 /* bird_1@2x.png in Resources */,
+				699492E81C1181F8008033C5 /* back6long@2x.png in Resources */,
 				693F9C341C0E731500BFFBB4 /* Assets.atlas in Resources */,
 				692337131C0EF8960036A721 /* game_over@2x.png in Resources */,
 				6923371B1C0EF8960036A721 /* pipe_top@2x.png in Resources */,
@@ -655,6 +665,7 @@
 				D907ACA01BFD3FEA005D30A9 /* Assets.xcassets in Resources */,
 				699492DB1C116CE6008033C5 /* score.wav in Resources */,
 				6923371C1C0EF8960036A721 /* taptap@2x.png in Resources */,
+				699492EC1C1182A6008033C5 /* back578@2x.png in Resources */,
 				690ABE631C0E7FF200362C2C /* Background17.png in Resources */,
 				69A5DCE41C0C0561004FF607 /* calibrateimage.png in Resources */,
 				693F9BDD1C0E72A200BFFBB4 /* StarPing.wav in Resources */,
@@ -673,6 +684,7 @@
 				690ABE661C0E7FF200362C2C /* Background14.png in Resources */,
 				696229661C111000002E038E /* BackgroundWarp.gif in Resources */,
 				690ABE6A1C0E7FF200362C2C /* Background10.png in Resources */,
+				699492EE1C118350008033C5 /* back640x1334@2x.png in Resources */,
 				69A5DCDD1C0C032B004FF607 /* jump.PNG in Resources */,
 				699492D91C116A7C008033C5 /* smack.wav in Resources */,
 				690ABE701C0E7FF200362C2C /* Background04.png in Resources */,

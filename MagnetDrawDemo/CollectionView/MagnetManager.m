@@ -17,6 +17,9 @@
     dispatch_once(&onceToken, ^{
         sharedMyManager = [[self alloc] init];
     });
+    
+    sharedMyManager.isSetUp = false;
+    
     return sharedMyManager;
 }
 
@@ -26,6 +29,8 @@
     self.isTopBottomCalibrated = false;
     self.isPlayingPong = false;
     self.isPlayingJump = false;
+    
+    self.isSetUp = true;
     
     [self checkLocationServicesAuthorization];
     

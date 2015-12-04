@@ -16,14 +16,17 @@
 #import "FLAPPYBirdNode.h"
 #import "FLAPPYScore.h"
 
-#define BACK_SCROLLING_SPEED .5
+#define BACK_SCROLLING_SPEED .5 
 #define FLOOR_SCROLLING_SPEED 3
 
 // Obstacles
 #define VERTICAL_GAP_SIZE 120
 #define FIRST_OBSTACLE_PADDING 100
-#define OBSTACLE_MIN_HEIGHT 60
+#define OBSTACLE_MIN_HEIGHT 80 //60
 #define OBSTACLE_INTERVAL_SPACE 130
+
+//magnetic threshold
+#define FLAP_THRESHOLD 1000
 
 @implementation FLAPPYScene{
     FLAPPYSKScrollingNode * floor;
@@ -42,11 +45,25 @@ static bool wasted = NO;
 - (id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         self.physicsWorld.contactDelegate = self;
+        
+        self.gameStarted = false;
+        
         [self startGame];
         
         self.manager = [MagnetManager sharedManager];
+        
+        if (self.manager.isSetUp == false) {
+            [self.manager setup];
+        }
+        
         self.manager.isPlayingFlappy = YES;
+        
+        __weak typeof(self) weakSelf = self;
+        self.manager.onHeadingUpdateListener = ^(CLHeading *heading) {
+            [weakSelf makeBirdBounceWithMagnet];
+        };
     }
+    
     return self;
 }
 
@@ -71,11 +88,23 @@ static bool wasted = NO;
     }
 }
 
+-(void)makeBirdBounceWithMagnet{
+    
+    if (self.manager.heading.x > -15.0 && self.manager.heading.x < 15.0  && self.gameStarted == YES)
+    {
+        NSLog(@"!!!!!!!!!!!MAGNET FLAP OCCURRED !!!!!!!!!!!!");
+        [bird bounce];
+    }
+}
+
 #pragma mark - Creations
 
 - (void) createBackground
 {
-    back = [FLAPPYSKScrollingNode scrollingNodeWithImageNamed:@"back" inContainerWidth:WIDTH(self)];
+    back = [FLAPPYSKScrollingNode scrollingNodeWithImageNamed:@"back640x1334" inContainerWidth:WIDTH(self)];
+    
+    //[back setYScale:1.1749]; //to covert iphone5 image height to iphone6 image height
+    
     [back setScrollingSpeed:BACK_SCROLLING_SPEED];
     [back setAnchorPoint:CGPointZero];
     [back setPhysicsBody:[SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame]];
@@ -99,6 +128,7 @@ static bool wasted = NO;
 - (void)createFloor
 {
     floor = [FLAPPYSKScrollingNode scrollingNodeWithImageNamed:@"floor" inContainerWidth:WIDTH(self)];
+    
     [floor setScrollingSpeed:FLOOR_SCROLLING_SPEED];
     [floor setAnchorPoint:CGPointZero];
     [floor setName:@"floor"];
@@ -164,6 +194,7 @@ static bool wasted = NO;
             [bird startPlaying];
             if([self.delegate respondsToSelector:@selector(eventPlay)]){
                 [self.delegate eventPlay];
+                self.gameStarted = YES;
             }
         }
         [bird bounce];
@@ -267,6 +298,8 @@ static bool wasted = NO;
     if(wasted){ return; }
 
     wasted = true;
+    self.gameStarted = false;
+    
     [FLAPPYScore registerScore:self.score];
     
     [self runAction:[SKAction playSoundFileNamed:@"smack.wav" waitForCompletion:NO]];

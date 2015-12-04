@@ -41,6 +41,8 @@
 @property(nonatomic) BOOL isPlayingJump;
 @property(nonatomic) BOOL isPlayingFlappy;
 
+@property BOOL isSetUp;
+
 - (void) setup;
 -(void)checkLocationServicesAuthorization;
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)heading;
