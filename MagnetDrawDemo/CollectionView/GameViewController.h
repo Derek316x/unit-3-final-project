@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
+#import "ThreeFingerDismissViewController.h"
 
-@interface GameViewController : UIViewController
+@interface GameViewController : ThreeFingerDismissViewController
 
 
 @property (nonatomic) BOOL isOrientationSet;

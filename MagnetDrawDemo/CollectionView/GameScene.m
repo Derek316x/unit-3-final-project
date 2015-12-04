@@ -257,14 +257,11 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
     //3 finger touch to quit
     //end game with 3 finger touch
     if ([[event touchesForView:self.view] count] == 3) {
-        NSLog(@"%lu active touches",[[event touchesForView:self.view] count]);
-        
-        self.manager.isPlayingJump = NO;
-        
-        UINavigationController *rootViewController = (UINavigationController*)self.view.window.rootViewController;
-        [rootViewController popViewControllerAnimated:YES];
 
+        self.manager.isPlayingJump = NO;
     }
+    
+    [super touchesBegan:touches withEvent:event];
     
     if (self.manager.isLeftRightCalibrated) {
         // 1

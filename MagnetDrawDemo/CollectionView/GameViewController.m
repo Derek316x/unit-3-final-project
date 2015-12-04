@@ -18,7 +18,10 @@
     NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
     [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
     
-    self.view = [[SKView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    CGRect bounds = [[UIScreen mainScreen] bounds];
+    CGFloat height = MAX(bounds.size.height, bounds.size.width);
+    CGFloat width = MIN(bounds.size.height, bounds.size.width);
+    self.view = [[SKView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
 }
 
 - (void)viewDidLoad{

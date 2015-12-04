@@ -20,13 +20,10 @@
 @property (nonatomic) BOOL isLeftSet;
 @property (nonatomic) BOOL isRightSet;
 
-
 @property (weak, nonatomic) IBOutlet UILabel *topLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bottomLabel;
 @property (weak, nonatomic) IBOutlet UILabel *leftLabel;
 @property (weak, nonatomic) IBOutlet UILabel *rightLabel;
-
-
 
 @end
 

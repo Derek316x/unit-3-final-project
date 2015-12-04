@@ -36,11 +36,20 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setBackgroundImage];
+    
     self.dataArray = [[NSMutableArray alloc] init];
     
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     
-    self.backgroundImageView.image = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:@"http://i.imgur.com/RuJYgPu.gif"]];
+    
+   
+}
+
+-(void)setBackgroundImage{
+    NSString *pathForGif = [[NSBundle mainBundle] pathForResource: @"BackgroundWarp" ofType: @"gif"];
+    NSData *gifData = [NSData dataWithContentsOfFile: pathForGif];
+    self.backgroundImageView.image = [UIImage animatedImageWithAnimatedGIFData:gifData];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -76,7 +85,8 @@ static NSString * const reuseIdentifier = @"Cell";
     else if (indexPath.row == 2){//jump
         
         GameViewController *jumpVC = [[GameViewController alloc] init];
-        [self.navigationController pushViewController:jumpVC animated:YES];
+        [self presentViewController:jumpVC animated:YES completion:nil];
+//        [self.navigationController pushViewController:jumpVC animated:YES];
     }
     else if (indexPath.row == 3){//space invaders
 
@@ -105,7 +115,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (BOOL)shouldAutorotate{
     //returns true if want to allow orientation change
-    return NO;
+    return YES;
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations{
