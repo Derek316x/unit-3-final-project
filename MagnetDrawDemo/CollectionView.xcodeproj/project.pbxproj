@@ -60,6 +60,12 @@
 		696229661C111000002E038E /* BackgroundWarp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 696229651C111000002E038E /* BackgroundWarp.gif */; };
 		696229691C11192D002E038E /* ThreeFingerDismissViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 696229681C11192D002E038E /* ThreeFingerDismissViewController.m */; };
 		6962296B1C111EA3002E038E /* pencraft_icon-dark-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6962296A1C111EA3002E038E /* pencraft_icon-dark-01.png */; };
+		696229731C1127EB002E038E /* FLAPPYScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 696229721C1127EB002E038E /* FLAPPYScore.m */; };
+		696229761C11287D002E038E /* FLAPPYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 696229751C11287D002E038E /* FLAPPYViewController.m */; };
+		696229791C1128A0002E038E /* FLAPPYScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 696229781C1128A0002E038E /* FLAPPYScene.m */; };
+		6962297C1C1128CA002E038E /* FLAPPYSKScrollingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6962297B1C1128CA002E038E /* FLAPPYSKScrollingNode.m */; };
+		6962297F1C1128D5002E038E /* FLAPPYBirdNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6962297E1C1128D5002E038E /* FLAPPYBirdNode.m */; };
+		696229821C1128EF002E038E /* FLAPPYMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 696229811C1128EF002E038E /* FLAPPYMath.m */; };
 		69A5DC8F1C0B7D06004FF607 /* stab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DC8D1C0B7D06004FF607 /* stab.mp3 */; };
 		69A5DC901C0B7D06004FF607 /* bounce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DC8E1C0B7D06004FF607 /* bounce.mp3 */; };
 		69A5DC971C0B7DE9004FF607 /* MagnetVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DC921C0B7DE9004FF607 /* MagnetVector.m */; };
@@ -172,6 +178,20 @@
 		696229671C11192D002E038E /* ThreeFingerDismissViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeFingerDismissViewController.h; sourceTree = "<group>"; };
 		696229681C11192D002E038E /* ThreeFingerDismissViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeFingerDismissViewController.m; sourceTree = "<group>"; };
 		6962296A1C111EA3002E038E /* pencraft_icon-dark-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencraft_icon-dark-01.png"; sourceTree = "<group>"; };
+		6962296F1C1127DC002E038E /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		696229701C1127DC002E038E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		696229711C1127EB002E038E /* FLAPPYScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAPPYScore.h; sourceTree = "<group>"; };
+		696229721C1127EB002E038E /* FLAPPYScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAPPYScore.m; sourceTree = "<group>"; };
+		696229741C11287D002E038E /* FLAPPYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAPPYViewController.h; sourceTree = "<group>"; };
+		696229751C11287D002E038E /* FLAPPYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAPPYViewController.m; sourceTree = "<group>"; };
+		696229771C1128A0002E038E /* FLAPPYScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAPPYScene.h; sourceTree = "<group>"; };
+		696229781C1128A0002E038E /* FLAPPYScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAPPYScene.m; sourceTree = "<group>"; };
+		6962297A1C1128B6002E038E /* FLAPPYSKScrollingNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAPPYSKScrollingNode.h; sourceTree = "<group>"; };
+		6962297B1C1128CA002E038E /* FLAPPYSKScrollingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAPPYSKScrollingNode.m; sourceTree = "<group>"; };
+		6962297D1C1128D5002E038E /* FLAPPYBirdNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAPPYBirdNode.h; sourceTree = "<group>"; };
+		6962297E1C1128D5002E038E /* FLAPPYBirdNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAPPYBirdNode.m; sourceTree = "<group>"; };
+		696229801C1128EF002E038E /* FLAPPYMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAPPYMath.h; sourceTree = "<group>"; };
+		696229811C1128EF002E038E /* FLAPPYMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAPPYMath.m; sourceTree = "<group>"; };
 		69A5DC8D1C0B7D06004FF607 /* stab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stab.mp3; sourceTree = "<group>"; };
 		69A5DC8E1C0B7D06004FF607 /* bounce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bounce.mp3; sourceTree = "<group>"; };
 		69A5DC911C0B7DE9004FF607 /* MagnetVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnetVector.h; sourceTree = "<group>"; };
@@ -309,6 +329,20 @@
 		696229641C0FECF8002E038E /* Flappy */ = {
 			isa = PBXGroup;
 			children = (
+				6962296F1C1127DC002E038E /* Macros.h */,
+				696229701C1127DC002E038E /* Constants.h */,
+				696229711C1127EB002E038E /* FLAPPYScore.h */,
+				696229721C1127EB002E038E /* FLAPPYScore.m */,
+				696229741C11287D002E038E /* FLAPPYViewController.h */,
+				696229751C11287D002E038E /* FLAPPYViewController.m */,
+				696229771C1128A0002E038E /* FLAPPYScene.h */,
+				696229781C1128A0002E038E /* FLAPPYScene.m */,
+				6962297A1C1128B6002E038E /* FLAPPYSKScrollingNode.h */,
+				6962297B1C1128CA002E038E /* FLAPPYSKScrollingNode.m */,
+				6962297D1C1128D5002E038E /* FLAPPYBirdNode.h */,
+				6962297E1C1128D5002E038E /* FLAPPYBirdNode.m */,
+				696229801C1128EF002E038E /* FLAPPYMath.h */,
+				696229811C1128EF002E038E /* FLAPPYMath.m */,
 			);
 			name = Flappy;
 			sourceTree = "<group>";
@@ -650,15 +684,21 @@
 			files = (
 				D907AC951BFD3FE9005D30A9 /* AppDelegate.m in Sources */,
 				693F9BD91C0E72A200BFFBB4 /* GameState.m in Sources */,
+				6962297F1C1128D5002E038E /* FLAPPYBirdNode.m in Sources */,
 				693F9BD71C0E72A200BFFBB4 /* GameScene.m in Sources */,
 				69A5DCA21C0B7E0F004FF607 /* SKPMyScene.m in Sources */,
+				696229821C1128EF002E038E /* FLAPPYMath.m in Sources */,
 				692336AD1C0EBCF70036A721 /* UINavigationController+Orientation.m in Sources */,
+				6962297C1C1128CA002E038E /* FLAPPYSKScrollingNode.m in Sources */,
 				693F9BD61C0E72A200BFFBB4 /* GameObjectNode.m in Sources */,
+				696229731C1127EB002E038E /* FLAPPYScore.m in Sources */,
 				D907ACC81BFD4054005D30A9 /* HomeCollectionViewController.m in Sources */,
 				D907AC9E1BFD3FEA005D30A9 /* CollectionView.xcdatamodeld in Sources */,
+				696229791C1128A0002E038E /* FLAPPYScene.m in Sources */,
 				69A5DC971C0B7DE9004FF607 /* MagnetVector.m in Sources */,
 				693F9BDB1C0E72A200BFFBB4 /* PlatformNode.m in Sources */,
 				D907AC921BFD3FE9005D30A9 /* main.m in Sources */,
+				696229761C11287D002E038E /* FLAPPYViewController.m in Sources */,
 				693F9BC41C0E727900BFFBB4 /* EndGameScene.m in Sources */,
 				69A5DCA31C0B7E0F004FF607 /* CalibrateViewController.m in Sources */,
 				69A5DCA11C0B7E0F004FF607 /* SKPViewController.m in Sources */,
