@@ -15,12 +15,9 @@
 @implementation ThreeFingerDismissViewController
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    if ([[event touchesForView:self.view] count] == 3) {
+    if (touches.count == 3) {
+        
         NSLog(@"%lu active touches",[[event touchesForView:self.view] count]);
-        
-//        self.manager.isPlayingJump = NO;
-        
-//        UINavigationController *rootViewController = (UINavigationController*)self.view.window.rootViewController;
         [self dismissViewControllerAnimated:YES completion:nil];
         
     }

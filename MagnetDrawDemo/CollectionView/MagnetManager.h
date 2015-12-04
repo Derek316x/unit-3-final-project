@@ -39,7 +39,7 @@
 
 @property(nonatomic) BOOL isPlayingPong;
 @property(nonatomic) BOOL isPlayingJump;
-
+@property(nonatomic) BOOL isPlayingFlappy;
 
 - (void) setup;
 -(void)checkLocationServicesAuthorization;

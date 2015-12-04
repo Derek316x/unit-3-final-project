@@ -8,6 +8,7 @@
 
 #import <objc/runtime.h>
 #import <SpriteKit/SpriteKit.h>
+#import "MagnetManager.h"
 
 
 @protocol SceneDelegate <NSObject>
@@ -20,6 +21,9 @@
 
 @property (unsafe_unretained,nonatomic) id<SceneDelegate> delegate;
 @property (nonatomic) NSInteger score;
+
+@property (nonatomic) MagnetManager *manager;
+
 
 - (void) startGame;
 

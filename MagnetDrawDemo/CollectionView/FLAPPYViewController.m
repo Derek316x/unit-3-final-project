@@ -11,6 +11,7 @@
 
 #import "FLAPPYViewController.h"
 #import "FLAPPYScore.h"
+#import "MagnetManager.h"
 
 @interface FLAPPYViewController ()
 @property (weak,nonatomic) IBOutlet SKView * gameView;
@@ -129,5 +130,18 @@
                            CGPointMake([self.view  center].x + 4.0f, [self.view  center].y)]];
     [[self.view layer] addAnimation:animation forKey:@"position"];
 }
+
+//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    
+//    //3 finger touch to quit
+//    //end game with 3 finger touch
+//    if (touches.count == 3) {
+//        MagnetManager *manager = [MagnetManager sharedManager];
+//        manager.isPlayingFlappy = NO;
+//        NSLog(@"3 fingers in flappy VC!!!!!!");
+//        
+//        [self dismissViewControllerAnimated:YES completion:nil];
+//    }
+//}
 
 @end

@@ -257,7 +257,9 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
     //3 finger touch to quit
     //end game with 3 finger touch
     if ([[event touchesForView:self.view] count] == 3) {
-
+        
+        NSLog(@"3 fingers in jump!!!!!!");
+        
         self.manager.isPlayingJump = NO;
     }
     

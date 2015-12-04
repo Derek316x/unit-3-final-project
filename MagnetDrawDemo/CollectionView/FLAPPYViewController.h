@@ -9,9 +9,10 @@
 #include <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 #import "FLAPPYScene.h"
+#import "ThreeFingerDismissViewController.h"
 
 
 
-@interface FLAPPYViewController : UIViewController<SceneDelegate>
+@interface FLAPPYViewController : ThreeFingerDismissViewController<SceneDelegate>
 
 @end

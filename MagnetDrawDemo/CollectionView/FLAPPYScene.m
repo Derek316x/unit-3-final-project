@@ -34,6 +34,7 @@
     int nbObstacles;
     NSMutableArray * topPipes;
     NSMutableArray * bottomPipes;
+    
 }
 
 static bool wasted = NO;
@@ -42,6 +43,9 @@ static bool wasted = NO;
     if (self = [super initWithSize:size]) {
         self.physicsWorld.contactDelegate = self;
         [self startGame];
+        
+        self.manager = [MagnetManager sharedManager];
+        self.manager.isPlayingFlappy = YES;
     }
     return self;
 }
@@ -107,7 +111,7 @@ static bool wasted = NO;
 - (void)createBird
 {
     bird = [FLAPPYBirdNode new];
-    [bird setPosition:CGPointMake(100, CGRectGetMidY(self.frame))];
+    [bird setPosition:CGPointMake(250, CGRectGetMidY(self.frame))];
     [bird setName:@"bird"];
     [self addChild:bird];
 }
@@ -146,6 +150,12 @@ static bool wasted = NO;
 #pragma mark - Interaction 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    if (touches.count == 3) {
+        self.manager.isPlayingFlappy = NO;
+    }
+    
+    [super touchesBegan:touches withEvent:event];
     
     if(wasted){
         [self startGame];
