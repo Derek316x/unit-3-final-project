@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,19 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PENCRAFT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyt-Wz-QYv">
-                                <rect key="frame" x="257" y="290.5" width="86" height="20.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencraft_icon-dark-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="jf0-hD-2Cw">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="512" id="CCA-dq-Xjd"/>
+                                    <constraint firstAttribute="width" secondItem="jf0-hD-2Cw" secondAttribute="height" multiplier="1:1" id="J6z-Df-ZVR"/>
+                                    <constraint firstAttribute="width" constant="300" id="z43-SF-PB5"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CCA-dq-Xjd"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="zyt-Wz-QYv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6z2-Q0-3gw"/>
-                            <constraint firstItem="zyt-Wz-QYv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="niO-LQ-phv"/>
+                            <constraint firstItem="jf0-hD-2Cw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VLH-hA-5PS"/>
+                            <constraint firstItem="jf0-hD-2Cw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jvJ-T3-ud5"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,4 +46,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencraft_icon-dark-01.png" width="1024" height="1024"/>
+    </resources>
 </document>

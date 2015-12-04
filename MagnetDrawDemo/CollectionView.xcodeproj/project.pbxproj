@@ -59,6 +59,7 @@
 		693F9C341C0E731500BFFBB4 /* Assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 693F9C331C0E731500BFFBB4 /* Assets.atlas */; };
 		696229661C111000002E038E /* BackgroundWarp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 696229651C111000002E038E /* BackgroundWarp.gif */; };
 		696229691C11192D002E038E /* ThreeFingerDismissViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 696229681C11192D002E038E /* ThreeFingerDismissViewController.m */; };
+		6962296B1C111EA3002E038E /* pencraft_icon-dark-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6962296A1C111EA3002E038E /* pencraft_icon-dark-01.png */; };
 		69A5DC8F1C0B7D06004FF607 /* stab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DC8D1C0B7D06004FF607 /* stab.mp3 */; };
 		69A5DC901C0B7D06004FF607 /* bounce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DC8E1C0B7D06004FF607 /* bounce.mp3 */; };
 		69A5DC971C0B7DE9004FF607 /* MagnetVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DC921C0B7DE9004FF607 /* MagnetVector.m */; };
@@ -170,6 +171,7 @@
 		696229651C111000002E038E /* BackgroundWarp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BackgroundWarp.gif; sourceTree = "<group>"; };
 		696229671C11192D002E038E /* ThreeFingerDismissViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeFingerDismissViewController.h; sourceTree = "<group>"; };
 		696229681C11192D002E038E /* ThreeFingerDismissViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeFingerDismissViewController.m; sourceTree = "<group>"; };
+		6962296A1C111EA3002E038E /* pencraft_icon-dark-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencraft_icon-dark-01.png"; sourceTree = "<group>"; };
 		69A5DC8D1C0B7D06004FF607 /* stab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stab.mp3; sourceTree = "<group>"; };
 		69A5DC8E1C0B7D06004FF607 /* bounce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bounce.mp3; sourceTree = "<group>"; };
 		69A5DC911C0B7DE9004FF607 /* MagnetVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnetVector.h; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 		D907AC901BFD3FE9005D30A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6962296A1C111EA3002E038E /* pencraft_icon-dark-01.png */,
 				696229651C111000002E038E /* BackgroundWarp.gif */,
 				69A5DC8D1C0B7D06004FF607 /* stab.mp3 */,
 				69A5DC8E1C0B7D06004FF607 /* bounce.mp3 */,
@@ -615,6 +618,7 @@
 				690ABE611C0E7FF200362C2C /* Background19.png in Resources */,
 				690ABE641C0E7FF200362C2C /* Background16.png in Resources */,
 				690ABE731C0E7FF200362C2C /* Background01.png in Resources */,
+				6962296B1C111EA3002E038E /* pencraft_icon-dark-01.png in Resources */,
 				692337101C0EF8960036A721 /* bird_2@2x.png in Resources */,
 				690ABE691C0E7FF200362C2C /* Background11.png in Resources */,
 				D907AC9B1BFD3FE9005D30A9 /* Main.storyboard in Resources */,
