@@ -85,6 +85,8 @@
          self.onHeadingUpdateListener(heading);
     } else if (self.isPlayingJump == true){
         self.onHeadingUpdateListener(heading);
+    } else if (self.isPlayingFlappy == true){
+        self.onHeadingUpdateListener(heading);
     }
    
     

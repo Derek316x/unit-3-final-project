@@ -90,17 +90,33 @@ static bool wasted = NO;
 
 -(void)makeBirdBounceWithMagnet{
     
-    if (self.manager.heading.x > -15.0 && self.manager.heading.x < 15.0  && self.gameStarted == YES)
+    if ([self playerIsMakingAFlap] == true)
     {
         NSLog(@"!!!!!!!!!!!MAGNET FLAP OCCURRED !!!!!!!!!!!!");
         [bird bounce];
     }
+    
+    self.lastXHeading = self.manager.heading.x;
+}
+
+-(BOOL)playerIsMakingAFlap{
+    
+    //we are positive, last heading was negative
+    if (self.manager.heading.x > 0.0 && self.lastXHeading < 0.0) {
+        return true;
+    }
+    
+    //we are negative, last heading was postive
+//    } else if (self.manager.heading.x < 0.0 && self.lastXHeading > 0.0){
+//        return true;
+//    }
+        return false;
 }
 
 #pragma mark - Creations
 
 - (void) createBackground
-{
+    {
     back = [FLAPPYSKScrollingNode scrollingNodeWithImageNamed:@"back640x1334" inContainerWidth:WIDTH(self)];
     
     //[back setYScale:1.1749]; //to covert iphone5 image height to iphone6 image height

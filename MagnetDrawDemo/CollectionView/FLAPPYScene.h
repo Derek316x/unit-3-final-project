@@ -24,6 +24,7 @@
 
 @property (nonatomic) MagnetManager *manager;
 
+@property (nonatomic) double lastXHeading;
 
 @property BOOL gameStarted;
 
