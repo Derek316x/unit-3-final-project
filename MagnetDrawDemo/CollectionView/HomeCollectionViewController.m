@@ -66,7 +66,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 -(void)setupBackgroundMusic{
-    NSString *pathForMP3 = [[NSBundle mainBundle] pathForResource: @"8BitBomber" ofType: @"mp3"];
+    NSString *pathForMP3 = [[NSBundle mainBundle] pathForResource: @"8BitBombercut" ofType: @"mp3"];
     NSURL *soundUrl = [NSURL fileURLWithPath:pathForMP3];
     self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
     [self.backgroundMusicPlayer play];

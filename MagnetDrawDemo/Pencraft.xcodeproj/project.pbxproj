@@ -76,6 +76,7 @@
 		699492E81C1181F8008033C5 /* back6long@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 699492E71C1181F8008033C5 /* back6long@2x.png */; };
 		699492EC1C1182A6008033C5 /* back578@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 699492EB1C1182A6008033C5 /* back578@2x.png */; };
 		699492EE1C118350008033C5 /* back640x1334@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 699492ED1C118350008033C5 /* back640x1334@2x.png */; };
+		699492F01C137641008033C5 /* 8BitBombercut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 699492EF1C137641008033C5 /* 8BitBombercut.mp3 */; };
 		69A5DC8F1C0B7D06004FF607 /* stab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DC8D1C0B7D06004FF607 /* stab.mp3 */; };
 		69A5DC901C0B7D06004FF607 /* bounce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DC8E1C0B7D06004FF607 /* bounce.mp3 */; };
 		69A5DC971C0B7DE9004FF607 /* MagnetVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DC921C0B7DE9004FF607 /* MagnetVector.m */; };
@@ -212,6 +213,7 @@
 		699492E71C1181F8008033C5 /* back6long@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back6long@2x.png"; sourceTree = "<group>"; };
 		699492EB1C1182A6008033C5 /* back578@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back578@2x.png"; sourceTree = "<group>"; };
 		699492ED1C118350008033C5 /* back640x1334@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back640x1334@2x.png"; sourceTree = "<group>"; };
+		699492EF1C137641008033C5 /* 8BitBombercut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8BitBombercut.mp3; sourceTree = "<group>"; };
 		69A5DC8D1C0B7D06004FF607 /* stab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stab.mp3; sourceTree = "<group>"; };
 		69A5DC8E1C0B7D06004FF607 /* bounce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bounce.mp3; sourceTree = "<group>"; };
 		69A5DC911C0B7DE9004FF607 /* MagnetVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnetVector.h; sourceTree = "<group>"; };
@@ -473,6 +475,7 @@
 		D907AC901BFD3FE9005D30A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				699492EF1C137641008033C5 /* 8BitBombercut.mp3 */,
 				699492E21C117A76008033C5 /* Nin10day.mp3 */,
 				699492DE1C1172A8008033C5 /* Struggle.mp3 */,
 				699492DC1C11727C008033C5 /* 8BitBomber.mp3 */,
@@ -644,6 +647,7 @@
 				699492E31C117A76008033C5 /* Nin10day.mp3 in Resources */,
 				6923370F1C0EF8960036A721 /* bird_1@2x.png in Resources */,
 				699492E81C1181F8008033C5 /* back6long@2x.png in Resources */,
+				699492F01C137641008033C5 /* 8BitBombercut.mp3 in Resources */,
 				693F9C341C0E731500BFFBB4 /* Assets.atlas in Resources */,
 				692337131C0EF8960036A721 /* game_over@2x.png in Resources */,
 				6923371B1C0EF8960036A721 /* pipe_top@2x.png in Resources */,

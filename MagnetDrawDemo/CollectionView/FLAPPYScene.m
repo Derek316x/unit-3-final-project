@@ -16,14 +16,14 @@
 #import "FLAPPYBirdNode.h"
 #import "FLAPPYScore.h"
 
-#define BACK_SCROLLING_SPEED .5 
+#define BACK_SCROLLING_SPEED .5 //.5
 #define FLOOR_SCROLLING_SPEED 3
 
 // Obstacles
 #define VERTICAL_GAP_SIZE 120
 #define FIRST_OBSTACLE_PADDING 100
 #define OBSTACLE_MIN_HEIGHT 80 //60
-#define OBSTACLE_INTERVAL_SPACE 130
+#define OBSTACLE_INTERVAL_SPACE 150 //130
 
 //magnetic threshold
 #define FLAP_THRESHOLD 1000
