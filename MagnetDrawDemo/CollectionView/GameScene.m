@@ -171,7 +171,7 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
         // 2
         _lblStars = [SKLabelNode labelNodeWithFontNamed:@"ChalkboardSE-Bold"];
         _lblStars.fontSize = 30;
-        _lblStars.fontColor = [SKColor whiteColor];
+        _lblStars.fontColor = [SKColor whiteColor]; //HUD COLOR
         _lblStars.position = CGPointMake(50, self.size.height-40);
         _lblStars.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
         // 3
@@ -182,7 +182,7 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
         // 4
         _lblScore = [SKLabelNode labelNodeWithFontNamed:@"ChalkboardSE-Bold"];
         _lblScore.fontSize = 30;
-        _lblScore.fontColor = [SKColor whiteColor];
+        _lblScore.fontColor = [SKColor whiteColor]; //HUD COLOR
         _lblScore.position = CGPointMake(self.size.width-20, self.size.height-40);
         _lblScore.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeRight;
         // 5
@@ -377,7 +377,14 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
         
         // 3
         SKSpriteNode *branchNode = [SKSpriteNode spriteNodeWithImageNamed:spriteName];
-        branchNode.position = CGPointMake(self.size.width/2, 500.0f * i);
+        branchNode.position = CGPointMake(self.size.width/2 * 0.85, 500.0f * i);
+        
+//        if ([spriteName isEqualToString:@"BranchLeft"]) {
+//            branchNode.zRotation = M_PI/4.0f;
+//        } else if ([spriteName isEqualToString:@"BranchRight"]){
+//            branchNode.zRotation = (-1) * M_PI/4.0f;
+//        }
+        
         [midgroundNode addChild:branchNode];
     }
     
@@ -426,8 +433,6 @@ typedef NS_OPTIONS(uint32_t, CollisionCategory)
     if (_player.position.y < (_maxPlayerY - 400)) {
         [self endGame];
     }
-    
-    NSLog(@"xHeading = %f",self.manager.heading.x);
 }
 
 

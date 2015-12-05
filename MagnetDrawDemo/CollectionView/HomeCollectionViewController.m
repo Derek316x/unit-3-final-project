@@ -63,6 +63,12 @@ static NSString * const reuseIdentifier = @"Cell";
     NSString *pathForGif = [[NSBundle mainBundle] pathForResource: @"BackgroundWarp" ofType: @"gif"];
     NSData *gifData = [NSData dataWithContentsOfFile: pathForGif];
     self.backgroundImageView.image = [UIImage animatedImageWithAnimatedGIFData:gifData];
+    
+    
+    UIImageView *image =[[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, 678.0/3.3, 136.0/3.3)];
+    image.image=[UIImage imageNamed:@"pencrafttitle.png"];
+    [self.view addSubview:image];
+    
 }
 
 -(void)setupBackgroundMusic{
