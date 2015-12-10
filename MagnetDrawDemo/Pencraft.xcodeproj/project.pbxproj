@@ -605,7 +605,7 @@
 				TargetAttributes = {
 					D907AC8C1BFD3FE9005D30A9 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = D89RJC2KAA;
+						DevelopmentTeam = 26RHXP32FH;
 					};
 					D907ACA81BFD3FEA005D30A9 = {
 						CreatedOnToolsVersion = 7.1;
@@ -912,7 +912,7 @@
 				INFOPLIST_FILE = CollectionView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.c4q.PenCraft.poopewr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.c4q.Pencraft;
 				PRODUCT_NAME = Pencraft;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CollectionView/CollectionView-Bridging-Header.h";
@@ -932,7 +932,7 @@
 				INFOPLIST_FILE = CollectionView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.c4q.PenCraft.poopewr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.c4q.Pencraft;
 				PRODUCT_NAME = Pencraft;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CollectionView/CollectionView-Bridging-Header.h";
