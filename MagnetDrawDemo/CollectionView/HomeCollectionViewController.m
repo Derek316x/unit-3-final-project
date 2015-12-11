@@ -72,7 +72,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 -(void)setupBackgroundMusic{
-    NSString *pathForMP3 = [[NSBundle mainBundle] pathForResource: @"8BitBombercut" ofType: @"mp3"];
+    NSString *pathForMP3 = [[NSBundle mainBundle] pathForResource: @"8BitBomber" ofType: @"mp3"];
     NSURL *soundUrl = [NSURL fileURLWithPath:pathForMP3];
     self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
     [self.backgroundMusicPlayer play];
@@ -85,7 +85,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 6;
+    return 4;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -107,27 +107,17 @@ static NSString * const reuseIdentifier = @"Cell";
         SKPViewController *pongVC = [[SKPViewController alloc] init];
         [self.navigationController presentViewController:pongVC animated:YES completion:^{}];
     }
-    else if (indexPath.row == 1){//drop charge
-        
-    }
-    else if (indexPath.row == 2){//jump
+    else if (indexPath.row == 1){//jump
         GameViewController *jumpVC = [[GameViewController alloc] init];
         [self presentViewController:jumpVC animated:YES completion:nil];
     }
-    else if (indexPath.row == 3){//space invaders
-
-    }
-    
-    if (indexPath.row == 4) { //calibrate
-        [self showCalibrateViewController];
-    }
-    
-    if (indexPath.row == 5) { //flappy
+    else if (indexPath.row == 2) { //flappy
         FLAPPYViewController *flappyVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"FlappyID"];
         [self presentViewController:flappyVC animated:YES completion:nil];
     }
-    
-    
+    else if (indexPath.row == 3) { //calibrate
+        [self showCalibrateViewController];
+    }
 }
 
 -(void)showCalibrateViewController{
